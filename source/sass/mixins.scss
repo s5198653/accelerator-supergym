@@ -44,23 +44,29 @@
   }
 }
 
-@mixin vp-1439 {
-  @media (max-width: ($vp-1440 - 1px)) {
+// @mixin vp-1439 {
+//   @media (max-width: ($vp-1440 - 1px)) {
+//     @content;
+//   }
+// }
+
+@mixin vp-1365 {
+  @media (max-width: ($vp-1366 - 1px)) {
     @content;
   }
 }
 
-@mixin vp-1279 {
-  @media (max-width: ($vp-1280 - 1px)) {
-    @content;
-  }
-}
+// @mixin vp-1279 {
+//   @media (max-width: ($vp-1280 - 1px)) {
+//     @content;
+//   }
+// }
 
-@mixin vp-1023 {
-  @media (max-width: ($vp-1024 - 1px)) {
-    @content;
-  }
-}
+// @mixin vp-1023 {
+//   @media (max-width: ($vp-1024 - 1px)) {
+//     @content;
+//   }
+// }
 
 @mixin vp-767 {
   @media (max-width: ($vp-768 - 1px)) {
