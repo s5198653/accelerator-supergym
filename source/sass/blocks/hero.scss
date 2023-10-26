@@ -1,0 +1,60 @@
+.hero {
+  padding-bottom: 120px;
+}
+
+.hero__container {
+  display: grid;
+  grid-template-columns: 33% 67%;
+  gap: 70px;
+}
+
+.hero__text-wrapper {
+  display: flex;
+  color: $color-default-white;
+  align-items: center;
+  text-align: right;
+  padding: 62px 0;
+}
+
+.hero__list {
+  margin: 0;
+  padding: 0;
+  list-style: none;
+  min-width: 113px;
+}
+
+.hero__item {
+  display: block;
+}
+
+.hero__right-column {
+  display: flex;
+  flex-direction: column;
+}
+
+.hero__title {
+  font-family: $ff-alumni;
+  font-size: 92px;
+  font-style: normal;
+  font-weight: 800;
+  line-height: 110px;
+  letter-spacing: 4.6px;
+  text-transform: uppercase;
+  margin-bottom: 50px;
+}
+
+.hero__description {
+  font-family: $ff-alumni;
+  font-weight: 600;
+  font-size: 54px;
+  line-height: 54px;
+  letter-spacing: 1.62px;
+  text-transform: uppercase;
+  padding-bottom: 10px;
+}
+
+.hero__button {
+  padding-left: 54px;
+  padding-right: 54px;
+  margin-left: auto;
+}

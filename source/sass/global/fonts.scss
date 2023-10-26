@@ -5,7 +5,8 @@
   font-family: "Alumni Sans";
 
   font-display: swap;
-  src: url("../fonts/alumni-sans-v18-latin-regular.woff2") format("woff2");
+  src: url("../fonts/alumni-sans-v18-cyrillic_latin-regular.woff2")
+    format("woff2");
 }
 /* alumni-sans-600 - latin */
 @font-face {
@@ -14,7 +15,7 @@
   font-family: "Alumni Sans";
 
   font-display: swap;
-  src: url("../fonts/alumni-sans-v18-latin-600.woff2") format("woff2");
+  src: url("../fonts/alumni-sans-v18-cyrillic_latin-600.woff2") format("woff2");
 }
 /* alumni-sans-700 - latin */
 @font-face {
@@ -23,7 +24,7 @@
   font-family: "Alumni Sans";
 
   font-display: swap;
-  src: url("../fonts/alumni-sans-v18-latin-700.woff2") format("woff2");
+  src: url("../fonts/alumni-sans-v18-cyrillic_latin-700.woff2") format("woff2");
 }
 /* alumni-sans-800 - latin */
 @font-face {
@@ -32,7 +33,7 @@
   font-family: "Alumni Sans";
 
   font-display: swap;
-  src: url("../fonts/alumni-sans-v18-latin-800.woff2") format("woff2");
+  src: url("../fonts/alumni-sans-v18-cyrillic_latin-800.woff2") format("woff2");
 }
 
 /* roboto-condensed-300 - latin */
@@ -42,7 +43,8 @@
   font-family: "Roboto Condensed";
 
   font-display: swap;
-  src: url("../fonts/roboto-condensed-v27-latin-300.woff2") format("woff2");
+  src: url("../fonts/roboto-condensed-v27-cyrillic_latin-300.woff2")
+    format("woff2");
 }
 /* roboto-condensed-regular - latin */
 @font-face {
@@ -51,7 +53,8 @@
   font-family: "Roboto Condensed";
 
   font-display: swap;
-  src: url("../fonts/roboto-condensed-v27-latin-regular.woff2") format("woff2");
+  src: url("../fonts/roboto-condensed-v27-cyrillic_latin-regular.woff2")
+    format("woff2");
 }
 /* roboto-condensed-700 - latin */
 @font-face {
@@ -60,5 +63,6 @@
   font-family: "Roboto Condensed";
 
   font-display: swap;
-  src: url("../fonts/roboto-condensed-v27-latin-700.woff2") format("woff2");
+  src: url("../fonts/roboto-condensed-v27-cyrillic_latin-700.woff2")
+    format("woff2");
 }
