@@ -23,7 +23,6 @@
   <div class="wrapper">
     <main>
       <div class="intro" data-test="hero">
-        <h1 class="visually-hidden">Сайт фитнес-центра SUPERGYM в Омске.</h1>
         <header class="main-header">
           <div class="main-header__container container">
             <a class="main-header__logo logo" href="index.html">
@@ -35,17 +34,18 @@
 
         <section class="hero">
           <div class="hero__container container">
+            <h1 class="visually-hidden">Сайт фитнес-центра SUPERGYM в Омске.</h1>
             <div class="hero__text-wrapper">
               <ul class="hero__list">
                 <li class="hero__item">Тренажёрный зал</li>
                 <li class="hero__item">Групповые занятия</li>
                 <li class="hero__item">Кардио-зона</li>
               </ul>
-              <div class="hero__right-column">
+              <div class="hero__title-area">
                 <span class="hero__description">Омск</span>
                 <span class="hero__title">Фитнес центр</span>
-                <a href="#membership" class="hero__button btn">Купить абонемент</a>
               </div>
+              <a href="#membership" class="hero__button btn">Купить абонемент</a>
             </div>
             <div class="hero__image-wrapper">
               <picture>
@@ -54,7 +54,7 @@
                 <source type="image/webp" srcset="img/hero-desktop@1x.webp 1x, img/hero-desktop@2x.webp 2x">
                 <source media="(max-width: 1365px)" type="image/png"
                   srcset="img/hero-tablet@1x.png 1x, img/hero-tablet@2x 2x">
-                <img class="slider__image" src="img/hero-desktop@1x.png" srcset="img/hero-desktop@2x.png" alt=""
+                <img class="hero__image" src="img/hero-desktop@1x.png" srcset="img/hero-desktop@2x.png" alt=""
                   width="500" height="524">
               </picture>
             </div>
@@ -81,7 +81,7 @@
           <img class="about__image" src="img/gym-desktop@1x.png" srcset="img/gym-desktop@2x.png" alt="" width="660"
             height="401">
         </picture>
-        <iframe src="https://www.youtube.com/watch?v=9TZXsZItgdw" width="364" height="228" frameborder="0"></iframe>
+        <iframe src="https://www.youtube.com/watch?v=9TZXsZItgdw" width="364" height="228"></iframe>
       </section>
       <section class="price" id="membership">
         <div class="price__container container">
@@ -450,11 +450,11 @@
         <div class="main-footer__free-lesson">
           <h2 class="main-footer__title">Бесплатное занятие</h2>
           <form class="main-footer__form" action="https://echo.htmlacademy.ru/" method="post">
-            <label class="main-footer_label">
+            <label class="main-footer__label">
               <span>Имя</span>
               <input class="main-footer__input" type="text" name="name" placeholder="Имя" required>
             </label>
-            <label class="main-footer_label">
+            <label class="main-footer__label">
               <span>Телефон</span>
               <input class="main-footer__input" type="number" name="phone" placeholder="Телефон" required>
             </label>
@@ -463,26 +463,24 @@
         </div>
         <div class="main-footer__contacts">
           <h2 class="main-footer__title">Контакты</h2>
-          <address class="main-footer__address">
-            <ul class="main-footer__address-list">
-              <li class="main-footer__address-item">
-                <h3 class="main-footer__address-title">Адрес:</h3>
-                <p class="main-footer__address-text">г. Омск, ул. 60 лет Октября, 7</p>
-              </li>
-              <li class="main-footer__address-item">
-                <h3 class="main-footer__address-title">Телефон:</h3>
-                <p class="main-footer__address-text" href="tel:+78005555555">8-800-555-55-55</p>
-              </li>
-              <li class="main-footer__address-item">
-                <h3 class="main-footer__address-title">График работы:</h3>
-                <p class="main-footer__address-text">Пн-Вс: с 8:00 до 22:00</p>
-              </li>
-              <li class="main-footer__address-item">
-                <h3 class="main-footer__address-title">Email:</h3>
-                <p class="main-footer__address-text" href="mailto:omsk@supergym.ru">omsk@supergym.ru</p>
-              </li>
-            </ul>
-          </address>
+          <ul class="main-footer__contacts-list">
+            <li class="main-footer__contacts-item">
+              <h3 class="main-footer__contacts-title">Адрес:</h3>
+              <p class="main-footer__contacts-text">г. Омск, ул. 60 лет Октября, 7</p>
+            </li>
+            <li class="main-footer__contacts-item">
+              <h3 class="main-footer__contacts-title">Телефон:</h3>
+              <a class="main-footer__contacts-text" href="tel:+78005555555">8-800-555-55-55</a>
+            </li>
+            <li class="main-footer__contacts-item">
+              <h3 class="main-footer__contacts-title">График работы:</h3>
+              <p class="main-footer__contacts-text">Пн-Вс: с 8:00 до 22:00</p>
+            </li>
+            <li class="main-footer__contacts-item">
+              <h3 class="main-footer__contacts-title">Email:</h3>
+              <a class="main-footer__contacts-text" href="mailto:omsk@supergym.ru">omsk@supergym.ru</a>
+            </li>
+          </ul>
         </div>
         <div class="footer">
           <a class="footer__logo logo" href="index.html">

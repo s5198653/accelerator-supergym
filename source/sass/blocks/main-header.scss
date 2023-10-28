@@ -1,5 +1,10 @@
 .main-header {
   padding: 20px 0 30px;
+
+  @include vp-767 {
+    padding-top: 5px;
+    padding-bottom: 16px;
+  }
 }
 
 .main-header__container {
@@ -11,7 +16,19 @@
 }
 
 .main-header__logo {
+  display: flex;
+  align-items: center;
   padding-top: 10px;
+
+  @include vp-1365 {
+    width: 111px;
+    height: 24px;
+  }
+
+  @include vp-767 {
+    width: 102px;
+    height: 22px;
+  }
 }
 
 .main-header__phone {
@@ -20,4 +37,14 @@
   line-height: 26px;
   color: $color-default-white;
   padding-top: 10px;
+
+  @include vp-1365 {
+    font-size: 24px;
+    line-height: 24px;
+  }
+
+  @include vp-767 {
+    font-size: 22px;
+    line-height: 22px;
+  }
 }
