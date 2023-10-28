@@ -1,12 +1,47 @@
 .about {
   position: relative;
-  padding: 115px 0;
+  padding: 115px 0 240px;
+
+  @include vp-1365 {
+    padding-top: 100px;
+  }
+
+  @include vp-767 {
+    padding-top: 70px;
+  }
 }
 
 .about__container {
   display: grid;
   grid-template-columns: 31% 69%;
   gap: 140px;
+
+  @include vp-1365 {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 39px;
+  }
+
+  @include vp-767 {
+    gap: 40px;
+    padding: 0;
+  }
+}
+
+.about__text {
+  @include vp-1365 {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+  }
+
+  @include vp-767 {
+    align-items: start;
+    padding: 0 15px 13px;
+  }
 }
 
 .about__text h2 {
@@ -19,6 +54,20 @@
   margin: 0;
   padding: 0;
   padding-bottom: 28px;
+
+  @include vp-1365 {
+    font-size: 42px;
+    line-height: 42px;
+    letter-spacing: 1.26px;
+    padding-bottom: 20px;
+  }
+
+  @include vp-767 {
+    font-size: 32px;
+    line-height: 32px;
+    letter-spacing: 0.96px;
+    padding-bottom: 13px;
+  }
 }
 
 .about__text h3 {
@@ -29,6 +78,18 @@
   line-height: 22px;
   margin: 0;
   padding-bottom: 95px;
+
+  @include vp-1365 {
+    font-size: 20px;
+    line-height: 20px;
+    padding-bottom: 33px;
+  }
+
+  @include vp-767 {
+    font-size: 18px;
+    line-height: 20px;
+    padding-bottom: 36px;
+  }
 }
 
 .about__text p {
@@ -38,14 +99,81 @@
   line-height: 24px;
   margin: 0;
   padding-bottom: 8px;
+
+  @include vp-1365 {
+    font-size: 16px;
+    line-height: 24px;
+    text-align: center;
+    padding-left: 88px;
+    padding-right: 88px;
+    padding-bottom: 0;
+  }
+
+  @include vp-767 {
+    font-size: 14px;
+    line-height: 22px;
+    padding: 0;
+    text-align: start;
+  }
+}
+
+.about__text p:not(:first-of-type) {
+  @include vp-1365 {
+    display: none;
+  }
 }
 
 .about__image {
-  padding-top: 3px;
+  width: 660px;
+  height: 401px;
+  padding-top: 4px;
+
+  @include vp-1365 {
+    width: 678px;
+    height: 345px;
+    padding-top: 0;
+  }
+
+  @include vp-767 {
+    width: 320px;
+    height: 313px;
+  }
 }
 
 .about__video {
   position: absolute;
   left: 40%;
-  top: 65%;
+  top: 54%;
+
+  @include vp-1365 {
+    left: 33%;
+    top: 64%;
+  }
+
+  @include vp-767 {
+    position: relative;
+    left: 0;
+    top: 0;
+  }
+}
+
+.about__video picture,
+.about__video img,
+.about__video iframe {
+  width: 364px;
+  height: 228px;
+
+  @include vp-1365 {
+    width: 265px;
+    height: 167px;
+  }
+
+  @include vp-767 {
+    width: 320px;
+    height: 167px;
+  }
+}
+
+.about__video button {
+  position: absolute;
 }
