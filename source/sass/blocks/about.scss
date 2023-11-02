@@ -21,7 +21,7 @@
     flex-direction: column;
     justify-content: center;
     align-items: center;
-    gap: 39px;
+    gap: 31px;
   }
 
   @include vp-767 {
@@ -147,7 +147,7 @@
   transform: translateX(-40%);
 
   @include vp-1365 {
-    left: 33%;
+    left: 50%;
     top: 64%;
   }
 

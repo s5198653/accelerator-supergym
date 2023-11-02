@@ -1,0 +1,27 @@
+.social {
+  max-width: 95px;
+}
+
+.social__list {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  gap: 10px;
+  margin: 0;
+  padding: 0;
+  list-style: none;
+}
+
+.social__link {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 25px;
+  height: 25px;
+  border-radius: 50%;
+  background-color: $color-default-white;
+}
+
+.social__link svg {
+  display: block;
+}
