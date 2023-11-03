@@ -1,0 +1,174 @@
+.offers {
+  display: flex;
+  flex-direction: column;
+  text-align: start;
+  gap: 70px;
+
+  @include vp-1365 {
+    gap: 40px;
+  }
+
+  @include vp-767 {
+    gap: 42px;
+    align-items: center;
+    text-align: center;
+  }
+}
+
+.offers h2 {
+  font-family: $ff-alumni;
+  font-size: 54px;
+  font-style: normal;
+  font-weight: 600;
+  line-height: 54px;
+  letter-spacing: 1.62px;
+  align-self: center;
+  margin: 0;
+}
+
+.offers ul {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  gap: 40px;
+  margin: 0;
+  padding: 0;
+  list-style: none;
+
+  @include vp-1365 {
+    gap: 30px;
+  }
+
+  @include vp-767 {
+    grid-template-columns: 1fr;
+  }
+}
+
+.offers li:first-child {
+  grid-row: 1/3;
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+
+  @include vp-1365 {
+    grid-column: 1/-1;
+    grid-row: 1/2;
+  }
+
+  @include vp-767 {
+    grid-template-columns: 1fr;
+  }
+}
+
+.offers li:not(:first-child) {
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+  min-height: 211px;
+  padding: 30px 35px 35px;
+  border: 7px solid;
+  border-image: linear-gradient(160deg, #d10a42 17%, #00359f 95%);
+  border-image-slice: 1;
+
+  @include vp-767 {
+    padding: 45px 45px 40px;
+  }
+}
+
+.offers h3 {
+  font-size: 26px;
+  font-style: normal;
+  font-weight: 700;
+  line-height: 26px;
+  margin: 0;
+
+  @include vp-1365 {
+    font-size: 24px;
+    line-height: 24px;
+  }
+
+  @include vp-767 {
+    font-size: 22px;
+    line-height: 22px;
+  }
+}
+
+.offers p {
+  font-size: 16px;
+  font-style: normal;
+  font-weight: 300;
+  line-height: 24px;
+  margin: 0;
+
+  @include vp-767 {
+    font-size: 14px;
+    line-height: 22px;
+  }
+}
+
+.offers span {
+  font-size: 70px;
+  font-style: normal;
+  font-weight: 700;
+  line-height: 70px;
+  padding-bottom: 10px;
+
+  @include vp-1365 {
+    padding-bottom: 15px;
+  }
+
+  @include vp-767 {
+    font-size: 64px;
+    line-height: 64px;
+    padding-bottom: 11px;
+  }
+}
+
+.offers a {
+  font-size: 14px;
+  font-style: normal;
+  font-weight: 700;
+  line-height: 14px;
+  letter-spacing: 0.7px;
+  text-transform: uppercase;
+  color: inherit;
+  margin-top: auto;
+  padding-bottom: 5px;
+  border-bottom: 1px solid;
+  align-self: start;
+
+  @include vp-767 {
+    align-self: center;
+    padding-top: 21px;
+  }
+}
+
+.offers div {
+  display: flex;
+  flex-direction: column;
+  gap: 15px;
+  color: $color-default-white;
+  background-color: #ed0233;
+  padding: 40px 45px 45px;
+
+  @include vp-1365 {
+    gap: 5px;
+    padding-top: 45px;
+  }
+
+  @include vp-767 {
+    gap: 9px;
+  }
+}
+
+.offers img {
+  width: 280px;
+  height: 462px;
+
+  @include vp-1365 {
+    min-width: 399px;
+  }
+
+  @include vp-767 {
+    min-width: 290px;
+    height: 330px;
+  }
+}
