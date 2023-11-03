@@ -6,6 +6,7 @@
 
   @include vp-1365 {
     gap: 40px;
+    padding-top: 100px;
   }
 
   @include vp-767 {
@@ -24,6 +25,18 @@
   letter-spacing: 1.62px;
   align-self: center;
   margin: 0;
+
+  @include vp-1365 {
+    font-size: 42px;
+    line-height: 42px;
+    letter-spacing: 1.26px;
+  }
+
+  @include vp-767 {
+    font-size: 32px;
+    line-height: 32px;
+    letter-spacing: 0.96px;
+  }
 }
 
 .offers ul {
@@ -55,6 +68,7 @@
 
   @include vp-767 {
     grid-template-columns: 1fr;
+    padding-bottom: 10px;
   }
 }
 
@@ -63,13 +77,13 @@
   flex-direction: column;
   gap: 10px;
   min-height: 211px;
-  padding: 30px 35px 35px;
+  padding: 23px 28px 28px;
   border: 7px solid;
   border-image: linear-gradient(160deg, #d10a42 17%, #00359f 95%);
   border-image-slice: 1;
 
   @include vp-767 {
-    padding: 45px 45px 40px;
+    padding: 38px 45px 32px;
   }
 }
 
@@ -104,6 +118,14 @@
   }
 }
 
+.offers span + p {
+  font-size: 18px;
+
+  @include vp-767 {
+    font-size: 16px;
+  }
+}
+
 .offers span {
   font-size: 70px;
   font-style: normal;
@@ -118,7 +140,7 @@
   @include vp-767 {
     font-size: 64px;
     line-height: 64px;
-    padding-bottom: 11px;
+    padding-bottom: 9px;
   }
 }
 
@@ -135,9 +157,14 @@
   border-bottom: 1px solid;
   align-self: start;
 
+  @include vp-1365 {
+    padding-bottom: 2px;
+  }
+
   @include vp-767 {
     align-self: center;
     padding-top: 21px;
+    padding-bottom: 4px;
   }
 }
 
@@ -156,6 +183,7 @@
 
   @include vp-767 {
     gap: 9px;
+    min-height: 300px;
   }
 }
 
