@@ -134,6 +134,20 @@
   margin-left: auto;
   margin-bottom: auto;
 
+  @include hover-focus {
+    color: $color-egyptian-blue;
+    background-color: $color-default-white;
+  }
+
+  @include active {
+    color: $color-sapphire;
+    background-color: $color-default-white;
+  }
+
+  &:disabled {
+    opacity: 0.5;
+  }
+
   @include vp-1365 {
     padding: 20px 33px;
   }
