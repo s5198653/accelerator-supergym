@@ -7,6 +7,11 @@
   padding-left: 163px;
   padding-right: 163px;
 
+  @include vp-1365 {
+    padding-left: 45px;
+    padding-right: 45px;
+  }
+
   @include vp-767 {
     gap: 55px;
   }
@@ -41,12 +46,36 @@
   list-style: none;
   display: grid;
   grid-template-columns: repeat(3, 1fr);
+
+  @include vp-1365 {
+    grid-template-columns: repeat(2, 1fr);
+    gap: 40px 50px;
+  }
+
+  @include vp-767 {
+    display: flex;
+    flex-direction: column;
+    gap: 35px;
+  }
 }
 
 .features li {
   display: flex;
   gap: 30px;
   min-height: 174px;
+
+  @include vp-1365 {
+    gap: 15px;
+    min-height: 92px;
+  }
+
+  @include vp-767 {
+    flex-direction: column;
+    gap: 10px;
+    align-items: center;
+    text-align: center;
+    padding: 0 45px;
+  }
 }
 
 .features li:nth-child(5n + 3) {
@@ -63,6 +92,24 @@
   min-height: 340px;
   margin: 4px 60px 0;
   padding: 34px;
+
+  @include vp-1365 {
+    grid-row: 2/3;
+    grid-column: 1/-1;
+    width: 400px;
+    min-height: 262px;
+    margin: 0 auto;
+    padding: 35px 35px 26px;
+    gap: 25px;
+  }
+
+  @include vp-767 {
+    width: 100vw;
+    min-width: 320px;
+    min-height: 225px;
+    gap: 5px;
+    padding: 20px 70px;
+  }
 }
 
 .features span {
@@ -74,7 +121,7 @@
   background-clip: text;
   -webkit-background-clip: text;
   -webkit-text-fill-color: transparent;
-  word-break: break-all;
+  // word-break: break-all;
 
   @include vp-767 {
     font-size: 64px;
@@ -102,6 +149,16 @@
   font-style: normal;
   font-weight: 700;
   line-height: 26px;
+
+  @include vp-1365 {
+    font-size: 24px;
+    line-height: 24px;
+  }
+
+  @include vp-767 {
+    font-size: 22px;
+    line-height: 22px;
+  }
 }
 
 .features li > p {
@@ -118,10 +175,25 @@
   display: flex;
   flex-direction: column;
   gap: 8px;
+
+  @include vp-1365 {
+    gap: 12px;
+  }
 }
 
 .features li:nth-child(5n + 3) div {
   gap: 33px;
+  word-break: break-word;
+
+  @include vp-1365 {
+    gap: 25px;
+    padding: 0 60px;
+  }
+
+  @include vp-767 {
+    gap: 20px;
+    padding: 0;
+  }
 }
 
 .features h3 {
@@ -139,7 +211,6 @@
 
   @include vp-767 {
     font-size: 18px;
-    line-height: 20px;
   }
 }
 
@@ -153,6 +224,7 @@
   @include vp-767 {
     font-size: 14px;
     line-height: 22px;
+    word-break: break-word;
   }
 }
 
@@ -161,4 +233,10 @@
   min-height: 172px;
   border-top: 2px solid rgba(209, 10, 66, 0.2);
   padding-top: 54px;
+
+  @include vp-1365 {
+    border-top: none;
+    padding-top: 0;
+    min-height: 92px;
+  }
 }
