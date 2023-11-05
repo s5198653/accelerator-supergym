@@ -79,7 +79,7 @@
   min-height: 211px;
   padding: 23px 28px 28px;
   border: 7px solid;
-  border-image: linear-gradient(160deg, #d10a42 17%, #00359f 95%);
+  border-image: linear-gradient(160deg, #d10a42 0%, #00359f 95%);
   border-image-slice: 1;
 
   @include vp-767 {

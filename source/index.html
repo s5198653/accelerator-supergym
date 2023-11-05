@@ -113,52 +113,100 @@
 
       <section class="price" id="membership" data-test="price">
         <div class="price__container container">
-          <h2 class="price__title">Абонементы</h2>
-          <picture>
-            <source media="(max-width: 1365px)" type="image/webp"
-              srcset="img/bar-tablet@1x.webp 1x, img/bar-tablet@2x.webp 2x">
-            <source type="image/webp" srcset="img/bar-desktop@1x.webp 1x, img/bar-desktop@2x.webp 2x">
-            <source media="(max-width: 1365px)" type="image/jpg"
-              srcset="img/bar-tablet@1x.jpg 1x, img/bar-tablet@2x.jpg 2x">
-            <img class="price__image" src="img/bar-desktop@1x.jpg" srcset="img/bar-desktop@2x.jpg" alt="" width="321"
-              height="384">
-          </picture>
-          <ul class="price__list">
-            <li class="price__item">1 месяц</li>
-            <li class="price__item">6 месяцев</li>
-            <li class="price__item">12 месяцев</li>
+          <h2 class="price__title title">Абонементы</h2>
+          <div class="price__poster">
+            <picture>
+              <source media="(max-width: 1365px)" type="image/webp"
+                srcset="img/bar-tablet@1x.webp 1x, img/bar-tablet@2x.webp 2x">
+              <source type="image/webp" srcset="img/bar-desktop@1x.webp 1x, img/bar-desktop@2x.webp 2x">
+              <source media="(max-width: 1365px)" type="image/jpg"
+                srcset="img/bar-tablet@1x.jpg 1x, img/bar-tablet@2x.jpg 2x">
+              <img class="price__image" src="img/bar-desktop@1x.jpg" srcset="img/bar-desktop@2x.jpg" alt="" width="321"
+                height="384">
+            </picture>
+          </div>
+          <ul class="price__sort-list">
+            <li class="price__sort-item price__sort-item--month price__sort-item--current">1 месяц</li>
+            <li class="price__sort-item price__sort-item--half-year">6 месяцев</li>
+            <li class="price__sort-item price__sort-item--year">12 месяцев</li>
           </ul>
-          <ul class="price__list">
-            <li class="price__item card">
-              <span class="card__description">С тренером</span>
-              <span class="card__time">12 занятий</span>
-              <span class="card__price">5000</span>
-              <svg width="30" height="42">
-                <use href="img/sprite.svg#rouble"></use>
-              </svg>
+          <ul class="price__card-list">
+            <li class="price__card-item">
+              <span class="price__card-description">С тренером</span>
+              <span class="price__card-time">12 занятий</span>
+              <div class="price__card-price-wrapper">
+                <ul class="price__card-price-list">
+                  <li class="price__card-price price__card-price--current price__card-price--month">
+                    <p>5000</p>
+                    <span>5000</span>
+                  </li>
+                  <li class="price__card-price price__card-price--half-year">
+                    <p>30000</p>
+                    <span>30000</span>
+                  </li>
+                  <li class="price__card-price price__card-price--year">
+                    <p>60000</p>
+                    <span>60000</span>
+                  </li>
+                </ul>
+                <svg width="30" height="42">
+                  <use href="img/sprite.svg#rouble"></use>
+                </svg>
+              </div>
               <a href="#" class="price__button btn">Купить абонемент</a>
             </li>
-            <li class="price__item card">
-              <span class="card__description">Дневной</span>
-              <span class="card__time">с 8:00 до 17:00</span>
-              <span class="card__price">1700</span>
-              <svg width="30" height="42">
-                <use href="img/sprite.svg#rouble"></use>
-              </svg>
+            <li class="price__card-item price__card-item--current">
+              <span class="price__card-description">Дневной</span>
+              <span class="price__card-time">с 8:00 до 17:00</span>
+              <div class="price__card-price-wrapper">
+                <ul class="price__card-price-list">
+                  <li class="price__card-price price__card-price--current price__card-price--month">
+                    <p>1700</p>
+                    <span>1700</span>
+                  </li>
+                  <li class="price__card-price price__card-price--half-year">
+                    <p>10200</p>
+                    <span>10200</span>
+                  </li>
+                  <li class="price__card-price price__card-price--year">
+                    <p>20400</p>
+                    <span>20400</span>
+                  </li>
+                </ul>
+                <svg width="30" height="42">
+                  <use href="img/sprite.svg#rouble"></use>
+                </svg>
+              </div>
               <a href="#" class="price__button btn">Купить абонемент</a>
             </li>
-            <li class="price__item card">
-              <span class="card__description">Полный день</span>
-              <span class="card__time">с 8:00 до 22:00</span>
-              <span class="card__price">2700</span>
-              <svg width="30" height="42">
-                <use href="img/sprite.svg#rouble"></use>
-              </svg>
+            <li class="price__card-item">
+              <span class="price__card-description">Полный день</span>
+              <span class="price__card-time">с 8:00 до 22:00</span>
+              <div class="price__card-price-wrapper">
+                <ul class="price__card-price-list">
+                  <li class="price__card-price price__card-price--current price__card-price--month">
+                    <p>2700</p>
+                    <span>2700</span>
+                  </li>
+                  <li class="price__card-price price__card-price--half-year">
+                    <p>16200</p>
+                    <span>16200</span>
+                  </li>
+                  <li class="price__card-price price__card-price--year">
+                    <p>32400</p>
+                    <span>32400</span>
+                  </li>
+                </ul>
+                <svg width="30" height="42">
+                  <use href="img/sprite.svg#rouble"></use>
+                </svg>
+              </div>
               <a href="#" class="price__button btn">Купить абонемент</a>
             </li>
           </ul>
         </div>
       </section>
+
       <section class="games" data-test="games">
         <div class="games__container container">
           <div class="games__poster poster">
