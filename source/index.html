@@ -90,11 +90,9 @@
             </picture>
           </div>
           <div class="about__video">
-            <!-- <iframe data-iframe src="https://www.youtube.com/embed/9TZXsZItgdw" width="364" height="228"
+            <!-- <iframe data-tabs="video" src="https://www.youtube.com/embed/9TZXsZItgdw" width="364" height="228"
               title="Бесплатные интерактивные онлайн-курсы." loading="lazy"></iframe> -->
-          </div>
-          <div class="about__video-poster">
-            <picture>
+            <picture data-tabs="video-poster">
               <source media="(max-width: 767px)" type="image/webp"
                 srcset="img/video-mobile@1x.webp 1x, img/video-mobile@2x.webp 2x">
               <source media="(max-width: 1365px)" type="image/webp"
@@ -106,8 +104,9 @@
                 srcset="img/video-tablet@1x.jpg 1x, img/video-tablet@2x.jpg 2x">
               <img src="img/video-desktop@1x.jpg" srcset="img/video-desktop@2x.jpg" alt="" width="364" height="228">
             </picture>
+            <button class="about__video-button" type="button" aria-label="Воспроизвести."
+              data-tabs="video-button"></button>
           </div>
-          <button class="about__video-button" type="button" aria-label="Воспроизвести."></button>
         </div>
       </section>
 
