@@ -112,7 +112,7 @@
       </section>
 
       <section class="price" id="membership" data-test="price">
-        <div class="price__container container">
+        <div class="price__container container" data-tabs="parent">
           <h2 class="price__title title">Абонементы</h2>
           <div class="price__poster">
             <picture>
@@ -125,54 +125,36 @@
                 height="491">
             </picture>
           </div>
-          <ul class="price__sort-list">
-            <li class="price__sort-item price__sort-item--month price__sort-item--current">1 месяц</li>
-            <li class="price__sort-item price__sort-item--half-year">6 месяцев</li>
-            <li class="price__sort-item price__sort-item--year">12 месяцев</li>
+          <ul class="price__sort-list" data-tabs="controls">
+            <li>
+              <button class="price__sort-item is-active" type="button" data-tabs="control">1 месяц</button>
+            </li>
+            <li>
+              <button class="price__sort-item" type="button" data-tabs="control">6 месяцев</button>
+            </li>
+            <li>
+              <button class="price__sort-item" type="button" data-tabs="control">12 месяцев</button>
+            </li>
           </ul>
-          <ul class="price__card-list">
+          <ul class="price__card-list" data-tabs="content">
             <li class="price__card-item">
               <span class="price__card-description">С тренером</span>
               <span class="price__card-time">12 занятий</span>
               <div class="price__card-price-wrapper">
-                <ul class="price__card-price-list">
-                  <li class="price__card-price price__card-price--current price__card-price--month">
-                    <p>5000</p>
-                    <span>5000</span>
-                  </li>
-                  <li class="price__card-price price__card-price--half-year">
-                    <p>30000</p>
-                    <span>30000</span>
-                  </li>
-                  <li class="price__card-price price__card-price--year">
-                    <p>60000</p>
-                    <span>60000</span>
-                  </li>
-                </ul>
+                <p class="price__card-price" data-tabs="price">5000</p>
+                <span data-tabs="price-shadow">5000</span>
                 <svg width="30" height="42">
                   <use href="img/sprite.svg#rouble"></use>
                 </svg>
               </div>
               <a href="#" class="price__button btn">Купить абонемент</a>
             </li>
-            <li class="price__card-item price__card-item--current">
+            <li class="price__card-item price__card-item--basic">
               <span class="price__card-description">Дневной</span>
               <span class="price__card-time">с 8:00 до 17:00</span>
               <div class="price__card-price-wrapper">
-                <ul class="price__card-price-list">
-                  <li class="price__card-price price__card-price--current price__card-price--month">
-                    <p>1700</p>
-                    <span>1700</span>
-                  </li>
-                  <li class="price__card-price price__card-price--half-year">
-                    <p>10200</p>
-                    <span>10200</span>
-                  </li>
-                  <li class="price__card-price price__card-price--year">
-                    <p>20400</p>
-                    <span>20400</span>
-                  </li>
-                </ul>
+                <p class="price__card-price" data-tabs="price">1700</p>
+                <span data-tabs="price-shadow">1700</span>
                 <svg width="30" height="42">
                   <use href="img/sprite.svg#rouble"></use>
                 </svg>
@@ -183,20 +165,8 @@
               <span class="price__card-description">Полный день</span>
               <span class="price__card-time">с 8:00 до 22:00</span>
               <div class="price__card-price-wrapper">
-                <ul class="price__card-price-list">
-                  <li class="price__card-price price__card-price--current price__card-price--month">
-                    <p>2700</p>
-                    <span>2700</span>
-                  </li>
-                  <li class="price__card-price price__card-price--half-year">
-                    <p>16200</p>
-                    <span>16200</span>
-                  </li>
-                  <li class="price__card-price price__card-price--year">
-                    <p>32400</p>
-                    <span>32400</span>
-                  </li>
-                </ul>
+                <p class="price__card-price" data-tabs="price">2700</p>
+                <span data-tabs="price-shadow">2700</span>
                 <svg width="30" height="42">
                   <use href="img/sprite.svg#rouble"></use>
                 </svg>
