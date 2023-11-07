@@ -4,4 +4,12 @@
   gap: 120px;
   padding-top: 120px;
   padding-bottom: 120px;
+
+  @include vp-1365 {
+    gap: 100px;
+  }
+
+  @include vp-767 {
+    gap: 70px;
+  }
 }

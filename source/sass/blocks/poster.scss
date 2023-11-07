@@ -1,70 +1,206 @@
 .poster {
   display: grid;
-  grid-template-columns: 1fr 660px;
+  grid-template-columns: 43% 1fr;
+
+  @include vp-767 {
+    grid-template-columns: 1fr;
+  }
 }
 
-.poster__text {
-  display: grid;
-  grid-template-columns: 180px 1fr;
-  gap: 23px 68px;
+.poster__text-wrapper {
+  display: flex;
+  flex-direction: column;
+  gap: 23px;
   color: $color-default-white;
   background-color: $color-torch-red;
   padding: 80px;
+
+  @include vp-1365 {
+    gap: 6px;
+    padding: 40px 45px 45px;
+  }
+
+  @include vp-767 {
+    gap: 13px;
+    padding: 40px;
+  }
+}
+
+.games__schedule-wrapper {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  gap: 68px;
+
+  @include vp-1365 {
+    gap: 40px;
+  }
+
+  @include vp-767 {
+    gap: 48px;
+  }
 }
 
 .poster__title {
   font-family: $ff-alumni;
   font-size: 82px;
+  font-style: normal;
   font-weight: 600;
   line-height: 76px;
   letter-spacing: 2.46px;
   text-transform: uppercase;
   margin: 0;
-}
 
-.poster__schedule {
-  display: grid;
-  grid-template-columns: repeat(2, 1fr);
-  gap: 12px 6px;
-  align-items: center;
-}
-
-.poster__schedule-text {
-  grid-column: 1/-1;
-  font-size: 18px;
-  font-style: normal;
-  font-weight: 300;
-  line-height: 24px;
-}
-
-.poster__time {
-  font-size: 40px;
-  font-weight: 700;
-  line-height: 40px;
-
-  &--hour {
-    grid-column: 1/-1;
+  @include vp-1365 {
+    font-size: 48px;
+    line-height: 46px;
+    letter-spacing: 1.44px;
   }
 }
 
-.poster__month {
-  font-size: 14px;
-  font-weight: 400;
-  line-height: 14px;
+.poster__schedule {
+  margin: 0;
+  padding: 0;
+  list-style: none;
+  display: inline-flex;
+  flex-direction: column;
+  gap: 20px;
+
+  @include vp-1365 {
+    gap: 8px;
+  }
+
+  @include vp-767 {
+    gap: 6px;
+  }
 }
 
-.poster__description {
-  grid-column: 1/-1;
+.poster__schedule-item {
+  display: flex;
+  flex-direction: column;
+  gap: 6px;
+
+  @include vp-1365 {
+    gap: 2px;
+  }
+
+  @include vp-767 {
+    gap: 3px;
+  }
+}
+
+.poster__schedule-text {
   font-size: 18px;
   font-style: normal;
   font-weight: 300;
   line-height: 24px;
   margin: 0;
+
+  @include vp-767 {
+    font-size: 16px;
+    line-height: 20px;
+  }
+}
+
+.poster__time {
+  position: relative;
+  display: inline-flex;
+  gap: 7px;
+  font-size: 40px;
+  font-weight: 700;
+  line-height: 40px;
+  margin: 0;
+  padding-top: 6px;
+
+  &::before {
+    content: "";
+    position: absolute;
+    top: -4px;
+    right: 0;
+    left: 0;
+    height: 1px;
+    background-color: $color-default-white;
+  }
+
+  &--short::before {
+    width: 64px;
+  }
+
+  @include vp-1365 {
+    gap: 5px;
+    font-size: 24px;
+    line-height: 24px;
+    padding-top: 0;
+
+    &::before {
+      top: -3px;
+    }
+
+    &--short::before {
+      width: 42px;
+    }
+  }
+}
+
+.poster__time span {
+  display: inline;
+  padding-top: 6px;
+  font-size: 14px;
+  font-weight: 400;
+  line-height: 14px;
+
+  @include vp-1365 {
+    font-size: 10px;
+    line-height: 100%;
+    padding-top: 2px;
+  }
+}
+
+.poster__description {
+  font-size: 18px;
+  font-style: normal;
+  font-weight: 300;
+  line-height: 24px;
+  margin: 0;
+
+  @include vp-1365 {
+    padding-bottom: 15px;
+  }
+
+  @include vp-767 {
+    font-size: 16px;
+    line-height: 20px;
+    padding-bottom: 7px;
+  }
 }
 
 .poster__button {
-  grid-column: 1/-1;
-  width: 340px;
+  max-width: 340px;
   padding: 27px 56px;
-  margin-top: 32px;
+  margin-top: auto;
+
+  @include vp-1365 {
+    padding: 20px 40px;
+  }
+}
+
+.games__image-wrapper {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: $color-sapphire;
+}
+
+.games__image-wrapper img {
+  width: 660px;
+  height: 500px;
+
+  @include vp-1365 {
+    width: 386px;
+    height: 324px;
+  }
+
+  @include vp-767 {
+    width: 290px;
+    height: 292px;
+  }
 }
