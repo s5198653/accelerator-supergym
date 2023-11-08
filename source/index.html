@@ -238,7 +238,6 @@
                       </div>
                     </div>
                   </div>
-
                   <div class="juri__swiper-slide swiper-slide">
                     <div class="juri__item">
                       <p class="juri__name">Алексей Лавров</p>
@@ -259,7 +258,6 @@
                       </div>
                     </div>
                   </div>
-
                   <div class="juri__swiper-slide swiper-slide">
                     <div class="juri__item">
                       <p class="juri__name">Александр Пашков</p>
@@ -280,7 +278,6 @@
                       </div>
                     </div>
                   </div>
-
                   <div class="juri__swiper-slide swiper-slide">
                     <div class="juri__item">
                       <p class="juri__name">Мария Кетова</p>
@@ -321,7 +318,6 @@
                       </div>
                     </div>
                   </div>
-
                   <div class="juri__swiper-slide swiper-slide">
                     <div class="juri__item">
                       <p class="juri__name">Алексей Лавров</p>
@@ -342,7 +338,6 @@
                       </div>
                     </div>
                   </div>
-
                   <div class="juri__swiper-slide swiper-slide">
                     <div class="juri__item">
                       <p class="juri__name">Александр Пашков</p>
@@ -363,7 +358,6 @@
                       </div>
                     </div>
                   </div>
-
                   <div class="juri__swiper-slide swiper-slide">
                     <div class="juri__item">
                       <p class="juri__name">Мария Кетова</p>
@@ -584,18 +578,67 @@
 
       <section class="reviews container" data-test="reviews">
         <h2>Отзывы</h2>
-        <blockquote>
-          <img src="img/reviews-author@1x.jpg" width="80" height="80" alt="">
-          <cite>Анна Орлова</cite>
-          <p>«Хожу в Supergym уже больше года. Нравится, что в клубе всегда чисто, тренажеры обновляют, персонал
-            дружелюбный. Зал просторный, даже в вечернее время нет очередей»</p>
-        </blockquote>
-        <blockquote>
-          <img src="img/reviews-author@1x.jpg" width="80" height="80" alt="">
-          <cite>Анна Орлова</cite>
-          <p>«Хожу в Supergym уже больше года. Нравится, что в клубе всегда чисто, тренажеры обновляют, персонал
-            дружелюбный. Зал просторный, даже в вечернее время нет очередей»</p>
-        </blockquote>
+
+        <div class="reviews__swiper-container">
+          <div class="reviews__swiper swiper" data-swiper="reviews-swiper">
+            <div class="reviews__swiper-wrapper swiper-wrapper">
+              <div class="reviews__swiper-slide swiper-slide">
+                <blockquote class="reviews__slide">
+                  <div class="reviews__image-wrapper">
+                    <picture>
+                      <source media="(max-width: 767px)" type="image/webp"
+                        srcset="img/reviews-author-mobile@1x.webp 1x, img/reviews-author-mobile@2x.webp 2x">
+                      <source type="image/webp"
+                        srcset="img/reviews-author-desktop@1x.webp 1x, img/reviews-author-desktop@2x.webp 2x">
+                      <source media="(max-width: 767px)" type="image/jpg"
+                        srcset="img/reviews-author-mobile@1x.jpg 1x, img/reviews-author-mobile@2x.jpg 2x">
+                      <img src="img/reviews-author-desktop@1x.jpg" srcset="img/reviews-author-desktop@2x.jpg"
+                        alt="Анна Орлова" width="80" height="80">
+                    </picture>
+                  </div>
+                  <div class="reviews__text-wrapper">
+                    <cite>Анна Орлова</cite>
+                    <p>«Хожу в Supergym уже больше года. Нравится, что в&nbsp;клубе всегда чисто, тренажеры обновляют,
+                      персонал
+                      дружелюбный. Зал просторный, даже в вечернее время нет очередей»</p>
+                  </div>
+                </blockquote>
+              </div>
+              <div class="reviews__swiper-slide swiper-slide">
+                <blockquote class="reviews__slide">
+                  <div class="reviews__image-wrapper">
+                    <picture>
+                      <source media="(max-width: 767px)" type="image/webp"
+                        srcset="img/reviews-author-mobile@1x.webp 1x, img/reviews-author-mobile@2x.webp 2x">
+                      <source type="image/webp"
+                        srcset="img/reviews-author-desktop@1x.webp 1x, img/reviews-author-desktop@2x.webp 2x">
+                      <source media="(max-width: 767px)" type="image/jpg"
+                        srcset="img/reviews-author-mobile@1x.jpg 1x, img/reviews-author-mobile@2x.jpg 2x">
+                      <img src="img/reviews-author-desktop@1x.jpg" srcset="img/reviews-author-desktop@2x.jpg"
+                        alt="Анна Орлова" width="80" height="80">
+                    </picture>
+                  </div>
+                  <div class="reviews__text-wrapper">
+                    <cite>Анна Орлова</cite>
+                    <p>«Хожу в Supergym уже больше года. Нравится, что в&nbsp;клубе всегда чисто, тренажеры обновляют,
+                      персонал
+                      дружелюбный. Зал просторный, даже в вечернее время нет очередей»</p>
+                  </div>
+                </blockquote>
+              </div>
+            </div>
+          </div>
+          <div class="reviews__nav-button reviews__nav-button--prev" data-button="reviews-prev">
+            <svg width="16" height="32">
+              <use href="img/sprite.svg#prev"></use>
+            </svg>
+          </div>
+          <div class="reviews__nav-button reviews__nav-button--next" data-button="reviews-next">
+            <svg width="16" height="32">
+              <use href="img/sprite.svg#next"></use>
+            </svg>
+          </div>
+        </div>
       </section>
     </main>
 
