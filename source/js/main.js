@@ -3,6 +3,7 @@ import { Form } from "./modules/form-validate/form";
 import { initPrices } from "./modules/init-price";
 import { runVideo } from "./modules/run-video";
 import { initSwiper } from "./modules/juri-swiper";
+import { initReviewsSwiper } from "./modules/reviews-swiper";
 
 // ---------------------------------
 
@@ -24,6 +25,7 @@ window.addEventListener("DOMContentLoaded", () => {
     runVideo();
     initPrices();
     initSwiper();
+    initReviewsSwiper();
   });
 });
 

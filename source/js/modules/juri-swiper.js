@@ -12,14 +12,17 @@ const initSwiper = () => {
       1366: {
         slidesPerView: 4,
         spaceBetween: 40,
+        allowTouchMove: false,
       },
       768: {
         slidesPerView: 2,
         spaceBetween: 32,
+        allowTouchMove: true,
       },
       320: {
         slidesPerView: 1,
         spaceBetween: 0,
+        allowTouchMove: true,
       },
     },
   });
