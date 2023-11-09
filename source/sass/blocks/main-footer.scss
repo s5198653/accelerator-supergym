@@ -150,9 +150,11 @@
 
 .main-footer__contacts {
   padding: 61px 100px;
+  border-top: 1px solid $color-light-slate-grey;
 
   @include vp-1365 {
     padding: 103px 133px;
+    border-top: unset;
   }
 
   @include vp-767 {

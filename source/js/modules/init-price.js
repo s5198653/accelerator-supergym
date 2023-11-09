@@ -4,19 +4,21 @@ const pricesPerPeriod = [
   [60000, 20400, 32400],
 ];
 
-const controlElements = document.querySelectorAll('[data-tabs="control"]');
+const controlElements = document.querySelectorAll(
+  '[data-tabs="price-control"]'
+);
 const prices = document.querySelectorAll('[data-tabs="price"]');
 const pricesShadows = document.querySelectorAll('[data-tabs="price-shadow"]');
 let activeIndex = 0;
 
 const removeAllActiveClasses = () => {
   controlElements.forEach((tab) => {
-    tab.classList.remove('is-active');
+    tab.classList.remove("is-active");
   });
 };
 
 const addActiveClass = (index) => {
-  controlElements[index].classList.add('is-active');
+  controlElements[index].classList.add("is-active");
 };
 
 const setPricesAndShadows = (index) => {
@@ -37,7 +39,7 @@ const onClickControlElement = (index) => {
 
 const addListenersToControlElements = () => {
   controlElements.forEach((control, index) => {
-    control.addEventListener('click', () => onClickControlElement(index));
+    control.addEventListener("click", () => onClickControlElement(index));
   });
 };
 

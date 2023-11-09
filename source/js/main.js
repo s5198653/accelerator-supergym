@@ -4,6 +4,8 @@ import { initPrices } from "./modules/init-price";
 import { runVideo } from "./modules/run-video";
 import { initSwiper } from "./modules/juri-swiper";
 import { initReviewsSwiper } from "./modules/reviews-swiper";
+import { initAccordions } from "./modules/init-accordion";
+import { initTabs } from "./modules/init-tabs";
 
 // ---------------------------------
 
@@ -26,6 +28,8 @@ window.addEventListener("DOMContentLoaded", () => {
     initPrices();
     initSwiper();
     initReviewsSwiper();
+    initTabs();
+    initAccordions();
   });
 });
 

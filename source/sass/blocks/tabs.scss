@@ -1,0 +1,53 @@
+.tabs {
+  display: flex;
+  gap: 40px;
+
+  @include vp-1365 {
+    flex-direction: column;
+  }
+
+  @include vp-767 {
+    gap: 30px;
+  }
+}
+
+.tabs__controls {
+  display: flex;
+  flex-direction: column;
+  flex-wrap: wrap;
+  gap: 10px;
+  max-width: 260px;
+
+  @include vp-1365 {
+    max-width: 100%;
+    flex-direction: row;
+  }
+
+  @include vp-767 {
+    gap: 8px;
+  }
+}
+
+.tabs__control {
+  width: 260px;
+
+  @include vp-1365 {
+    width: 162px;
+  }
+
+  @include vp-767 {
+    width: 141px;
+  }
+}
+
+.tabs__control span {
+  word-wrap: break-word;
+}
+
+.tabs__content {
+  flex-grow: 1;
+}
+
+.tabs__element {
+  width: 100%;
+}
