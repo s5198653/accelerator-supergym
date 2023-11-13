@@ -2,6 +2,7 @@
   position: relative;
   display: flex;
   gap: 140px;
+  padding-top: 115px;
   padding-bottom: 235px;
 
   @include vp-1365 {
@@ -10,11 +11,13 @@
     justify-content: center;
     align-items: center;
     gap: 31px;
+    padding-top: 100px;
     padding-bottom: 183px;
   }
 
   @include vp-767 {
     gap: 40px;
+    padding-top: 70px;
     padding-bottom: 70px;
   }
 }
@@ -70,13 +73,14 @@
   @include vp-1365 {
     font-size: 20px;
     line-height: 20px;
+    padding-right: 4px;
     padding-bottom: 33px;
   }
 
   @include vp-767 {
     font-size: 18px;
     line-height: 20px;
-    padding-bottom: 37px;
+    padding-bottom: 38px;
   }
 }
 
@@ -119,7 +123,7 @@
   @include vp-1365 {
     width: 678px;
     height: 345px;
-    margin-top: 7px;
+    margin-top: 8px;
   }
 
   @include vp-767 {
@@ -153,9 +157,7 @@
   z-index: 100;
 
   @include vp-1365 {
-    left: 50%;
-    top: 65%;
-    transform: translateX(-50%);
+    transform: translateX(-50%) translateY(96%);
     width: 265px;
     height: 167px;
   }
@@ -242,10 +244,17 @@
     width: 52px;
     height: 52px;
     background: $color-default-white;
+    outline-offset: 22px;
     outline-color: $color-sapphire;
 
     &::after {
       color: $color-sapphire;
+    }
+
+    @include vp-1365 {
+      width: 42px;
+      height: 42px;
+      outline-offset: 13px;
     }
   }
 
@@ -265,7 +274,6 @@
     width: 52px;
     height: 52px;
     outline-offset: 8px;
-    transform: translateX(-50%) translateY(-54%);
 
     &::after {
       font-size: 16px;
