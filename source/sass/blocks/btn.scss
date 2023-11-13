@@ -6,33 +6,26 @@
   font-weight: 700;
   line-height: 12px;
   letter-spacing: 0.6px;
-  color: $color-default-white;
+  color: $color-sapphire;
   text-transform: uppercase;
   text-align: center;
   justify-content: center;
   user-select: none;
 
   background-color: $color-transparent;
-  border: 2px solid $color-default-white;
+  border: 2px solid $color-sapphire;
   cursor: pointer;
 
   transition: opacity $trans-default;
 
-  &--red {
-    background-color: $color-torch-red;
-  }
-
-  &:disabled {
+  &:disabled,
+  &--disabled {
     opacity: 0.5;
-
     pointer-events: none;
   }
 
-  @include hover-focus {
-    opacity: 0.8;
-  }
-
-  @include vp-1365 {
-    font-weight: 400;
+  &--transparent {
+    color: $color-default-white;
+    border: 2px solid $color-default-white;
   }
 }
