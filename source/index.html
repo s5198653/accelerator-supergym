@@ -7,6 +7,13 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
   <meta name="description" content="Сайт фитнес-центра SUPERGYM в Омске">
   <title>Supergym</title>
+  <link rel="stylesheet" href="css/style.min.css">
+  <link rel="icon" href="favicon.ico" type="image/x-icon">
+  <link rel="icon" href="img/svg/favicon.svg" type="image/svg+xml">
+
+  <link rel="preload" href="css/style.min.css" as="style">
+  <link rel="preload" href="js/vendor.min.js" as="script">
+  <link rel="preload" href="js/main.min.js" as="script">
   <link rel="preload" href="fonts/alumni-sans-v18-cyrillic_latin-regular.woff2" as="font" crossorigin="anonymous">
   <link rel="preload" href="fonts/alumni-sans-v18-cyrillic_latin-600.woff2" as="font" crossorigin="anonymous">
   <link rel="preload" href="fonts/alumni-sans-v18-cyrillic_latin-700.woff2" as="font" crossorigin="anonymous">
@@ -14,9 +21,6 @@
   <link rel="preload" href="fonts/roboto-condensed-v27-cyrillic_latin-regular.woff2" as="font" crossorigin="anonymous">
   <link rel="preload" href="fonts/roboto-condensed-v27-cyrillic_latin-300.woff2" as="font" crossorigin="anonymous">
   <link rel="preload" href="fonts/roboto-condensed-v27-cyrillic_latin-700.woff2" as="font" crossorigin="anonymous">
-  <link rel="icon" href="favicon.ico" type="image/x-icon">
-  <link rel="icon" href="img/svg/favicon.svg" type="image/svg+xml">
-  <link rel="stylesheet" href="css/style.min.css">
 </head>
 
 <body>
@@ -44,7 +48,7 @@
               <span class="hero__description">Омск</span>
               <span class="hero__title">Фитнес центр</span>
             </div>
-            <a href="#membership" class="hero__button btn">Купить абонемент</a>
+            <a class="hero__button btn btn--transparent" href="#membership">Купить абонемент</a>
           </div>
           <div class="hero__image-wrapper">
             <picture>
@@ -178,7 +182,7 @@
         <div class="games__container container">
           <div class="games__poster poster">
             <div class="poster__text-wrapper">
-              <div class="games__schedule-wrapper">
+              <div class="poster__schedule-wrapper">
                 <h2 class="poster__title">Super<br>games</h2>
                 <ul class="poster__schedule">
                   <li class="poster__schedule-item">
@@ -191,10 +195,10 @@
                   </li>
                 </ul>
               </div>
-              <p class=" poster__description">Ежегодные соревнования по&nbsp;CrossFit</p>
-              <a href="#" class="poster__button btn">заполнить заявку</a>
+              <p class="poster__description">Ежегодные соревнования по&nbsp;CrossFit</p>
+              <a href="#" class="poster__button btn btn--transparent">заполнить заявку</a>
             </div>
-            <div class="games__image-wrapper">
+            <div class="poster__image-wrapper">
               <picture>
                 <source media="(max-width: 767px)" type="image/webp"
                   srcset="img/games-mobile@1x.webp 1x, img/games-mobile@2x.webp 2x">
@@ -217,161 +221,251 @@
               <div class="juri__swiper swiper" data-swiper="swiper">
                 <div class="juri__swiper-wrapper swiper-wrapper">
                   <div class="juri__swiper-slide swiper-slide">
-                    <div class="juri__item">
-                      <p class="juri__name">Анна Павлова</p>
-                      <div class="juri__wrapper">
-                        <p class="juri__specialty">CrossFit</p>
-                        <ul class="juri__description">
-                          <li class="juri__description-item">Certified Level 3 Trainer</li>
-                          <li class="juri__description-item">Победитель чемпионата России по CrossFit</li>
-                          <li class="juri__description-item">Опыт — 6 лет</li>
-                        </ul>
+                    <div class="juri__item" tabindex="0">
+                      <div class="juri__text-wrapper">
+                        <p class="juri__name">Анна Павлова</p>
+                        <div class="juri__description-wrapper">
+                          <p class="juri__specialty">CrossFit</p>
+                          <ul class="juri__description">
+                            <li class="juri__description-item">Certified Level 3 Trainer</li>
+                            <li class="juri__description-item">Победитель чемпионата России по CrossFit</li>
+                            <li class="juri__description-item">Опыт — 6 лет</li>
+                          </ul>
+                        </div>
                       </div>
                       <div class="juri__image-wrapper">
                         <picture>
-                          <source type="image/webp" srcset="img/juri-1@1x.webp 1x, img/juri-1@2x.webp 2x">
-                          <img class="juri__image" src="img/juri-1@1x.jpg" srcset="img/juri-1@2x.jpg" alt="Анна Павлова"
-                            width="260" height="294" loading="lazy">
+                          <source media="(max-width: 767px)" type="image/webp"
+                            srcset="img/juri/juri-1-mobile@1x.webp 1x, img/juri/juri-1-mobile@2x.webp 2x">
+                          <source media="(max-width: 1365px)" type="image/webp"
+                            srcset="img/juri/juri-1-tablet@1x.webp 1x, img/juri/juri-1-tablet@2x.webp 2x">
+                          <source type="image/webp"
+                            srcset="img/juri/juri-1-desktop@1x.webp 1x, img/juri/juri-1-desktop@2x.webp 2x">
+                          <source media="(max-width: 767px)" type="image/jpg"
+                            srcset="img/juri/juri-1-mobile@1x.jpg 1x, img/juri/juri-1-mobile@2x.jpg 2x">
+                          <source media="(max-width: 1365px)" type="image/jpg"
+                            srcset="img/juri/juri-1-tablet@1x.jpg 1x, img/juri/juri-1--tablet@2x.jpg 2x">
+                          <img src="img/juri/juri-1-desktop@1x.jpg" srcset="img/juri/juri-1-desktop@2x.jpg"
+                            alt="Анна Павлова" width="260" height="294" loading="lazy">
+                        </picture>
                         </picture>
                       </div>
                     </div>
                   </div>
                   <div class="juri__swiper-slide swiper-slide">
-                    <div class="juri__item">
-                      <p class="juri__name">Алексей Лавров</p>
-                      <div class="juri__wrapper">
-                        <p class="juri__specialty">CrossFit</p>
-                        <ul class="juri__description">
-                          <li class="juri__description-item">Certified Level 3 Trainer</li>
-                          <li class="juri__description-item">Победитель чемпионата России по CrossFit</li>
-                          <li class="juri__description-item">Опыт — 6 лет</li>
-                        </ul>
+                    <div class="juri__item" tabindex="0">
+                      <div class="juri__text-wrapper">
+                        <p class="juri__name">Алексей Лавров</p>
+                        <div class="juri__description-wrapper">
+                          <p class="juri__specialty">CrossFit</p>
+                          <ul class="juri__description">
+                            <li class="juri__description-item">Certified Level 3 Trainer</li>
+                            <li class="juri__description-item">Победитель чемпионата России по CrossFit</li>
+                            <li class="juri__description-item">Опыт — 6 лет</li>
+                          </ul>
+                        </div>
                       </div>
                       <div class="juri__image-wrapper">
                         <picture>
-                          <source type="image/webp" srcset="img/juri-2@1x.webp 1x, img/juri-2@2x.webp 2x">
-                          <img class="juri__image" src="img/juri-2@1x.jpg" srcset="img/juri-2@2x.jpg"
+                          <source media="(max-width: 767px)" type="image/webp"
+                            srcset="img/juri/juri-2-mobile@1x.webp 1x, img/juri/juri-2-mobile@2x.webp 2x">
+                          <source media="(max-width: 1365px)" type="image/webp"
+                            srcset="img/juri/juri-2-tablet@1x.webp 1x, img/juri/juri-2-tablet@2x.webp 2x">
+                          <source type="image/webp"
+                            srcset="img/juri/juri-2-desktop@1x.webp 1x, img/juri/juri-2-desktop@2x.webp 2x">
+                          <source media="(max-width: 767px)" type="image/jpg"
+                            srcset="img/juri/juri-2-mobile@1x.jpg 1x, img/juri/juri-2-mobile@2x.jpg 2x">
+                          <source media="(max-width: 1365px)" type="image/jpg"
+                            srcset="img/juri/juri-2-tablet@1x.jpg 1x, img/juri/juri-2--tablet@2x.jpg 2x">
+                          <img src="img/juri/juri-2-desktop@1x.jpg" srcset="img/juri/juri-2-desktop@2x.jpg"
                             alt="Алексей Лавров" width="260" height="294" loading="lazy">
                         </picture>
                       </div>
                     </div>
                   </div>
                   <div class="juri__swiper-slide swiper-slide">
-                    <div class="juri__item">
-                      <p class="juri__name">Александр Пашков</p>
-                      <div class="juri__wrapper">
-                        <p class="juri__specialty">CrossFit</p>
-                        <ul class="juri__description">
-                          <li class="juri__description-item">Certified Level 3 Trainer</li>
-                          <li class="juri__description-item">Победитель чемпионата России по CrossFit</li>
-                          <li class="juri__description-item">Опыт — 6 лет</li>
-                        </ul>
+                    <div class="juri__item" tabindex="0">
+                      <div class="juri__text-wrapper">
+                        <p class="juri__name">Александр Пашков</p>
+                        <div class="juri__description-wrapper">
+                          <p class="juri__specialty">CrossFit</p>
+                          <ul class="juri__description">
+                            <li class="juri__description-item">Certified Level 3 Trainer</li>
+                            <li class="juri__description-item">Победитель чемпионата России по CrossFit</li>
+                            <li class="juri__description-item">Опыт — 6 лет</li>
+                          </ul>
+                        </div>
                       </div>
                       <div class="juri__image-wrapper">
                         <picture>
-                          <source type="image/webp" srcset="img/juri-3@1x.webp 1x, img/juri-3@2x.webp 2x">
-                          <img class="juri__image" src="img/juri-3@1x.jpg" srcset="img/juri-3@2x.jpg" alt="" width="260"
-                            height="294" loading="lazy">
-                        </picture>
-                      </div>
-                    </div>
-                  </div>
-                  <div class="juri__swiper-slide swiper-slide">
-                    <div class="juri__item">
-                      <p class="juri__name">Мария Кетова</p>
-                      <div class="juri__wrapper">
-                        <p class="juri__specialty">CrossFit</p>
-                        <ul class="juri__description">
-                          <li class="juri__description-item">Certified Level 3 Trainer</li>
-                          <li class="juri__description-item">Победитель чемпионата России по CrossFit</li>
-                          <li class="juri__description-item">Опыт — 6 лет</li>
-                        </ul>
-                      </div>
-                      <div class="juri__image-wrapper">
-                        <picture>
-                          <source type="image/webp" srcset="img/juri-4@1x.webp 1x, img/juri-4@2x.webp 2x">
-                          <img class="juri__image" src="img/juri-4@1x.jpg" srcset="img/juri-4@2x.jpg" alt="Мария Кетова"
-                            width="260" height="294" loading="lazy">
-                        </picture>
-                      </div>
-                    </div>
-                  </div>
-                  <div class="juri__swiper-slide swiper-slide">
-                    <div class="juri__item">
-                      <p class="juri__name">Анна Павлова</p>
-                      <div class="juri__wrapper">
-                        <p class="juri__specialty">CrossFit</p>
-                        <ul class="juri__description">
-                          <li class="juri__description-item">Certified Level 3 Trainer</li>
-                          <li class="juri__description-item">Победитель чемпионата России по CrossFit</li>
-                          <li class="juri__description-item">Опыт — 6 лет</li>
-                        </ul>
-                      </div>
-                      <div class="juri__image-wrapper">
-                        <picture>
-                          <source type="image/webp" srcset="img/juri-1@1x.webp 1x, img/juri-1@2x.webp 2x">
-                          <img class="juri__image" src="img/juri-1@1x.jpg" srcset="img/juri-1@2x.jpg" alt="Анна Павлова"
-                            width="260" height="294" loading="lazy">
-                        </picture>
-                      </div>
-                    </div>
-                  </div>
-                  <div class="juri__swiper-slide swiper-slide">
-                    <div class="juri__item">
-                      <p class="juri__name">Алексей Лавров</p>
-                      <div class="juri__wrapper">
-                        <p class="juri__specialty">CrossFit</p>
-                        <ul class="juri__description">
-                          <li class="juri__description-item">Certified Level 3 Trainer</li>
-                          <li class="juri__description-item">Победитель чемпионата России по CrossFit</li>
-                          <li class="juri__description-item">Опыт — 6 лет</li>
-                        </ul>
-                      </div>
-                      <div class="juri__image-wrapper">
-                        <picture>
-                          <source type="image/webp" srcset="img/juri-2@1x.webp 1x, img/juri-2@2x.webp 2x">
-                          <img class="juri__image" src="img/juri-2@1x.jpg" srcset="img/juri-2@2x.jpg"
-                            alt="Алексей Лавров" width="260" height="294" loading="lazy">
-                        </picture>
-                      </div>
-                    </div>
-                  </div>
-                  <div class="juri__swiper-slide swiper-slide">
-                    <div class="juri__item">
-                      <p class="juri__name">Александр Пашков</p>
-                      <div class="juri__wrapper">
-                        <p class="juri__specialty">CrossFit</p>
-                        <ul class="juri__description">
-                          <li class="juri__description-item">Certified Level 3 Trainer</li>
-                          <li class="juri__description-item">Победитель чемпионата России по CrossFit</li>
-                          <li class="juri__description-item">Опыт — 6 лет</li>
-                        </ul>
-                      </div>
-                      <div class="juri__image-wrapper">
-                        <picture>
-                          <source type="image/webp" srcset="img/juri-3@1x.webp 1x, img/juri-3@2x.webp 2x">
-                          <img class="juri__image" src="img/juri-3@1x.jpg" srcset="img/juri-3@2x.jpg"
+                          <source media="(max-width: 767px)" type="image/webp"
+                            srcset="img/juri/juri-3-mobile@1x.webp 1x, img/juri/juri-3-mobile@2x.webp 2x">
+                          <source media="(max-width: 1365px)" type="image/webp"
+                            srcset="img/juri/juri-3-tablet@1x.webp 1x, img/juri/juri-3-tablet@2x.webp 2x">
+                          <source type="image/webp"
+                            srcset="img/juri/juri-3-desktop@1x.webp 1x, img/juri/juri-3-desktop@2x.webp 2x">
+                          <source media="(max-width: 767px)" type="image/jpg"
+                            srcset="img/juri/juri-3-mobile@1x.jpg 1x, img/juri/juri-3-mobile@2x.jpg 2x">
+                          <source media="(max-width: 1365px)" type="image/jpg"
+                            srcset="img/juri/juri-3-tablet@1x.jpg 1x, img/juri/juri-3--tablet@2x.jpg 2x">
+                          <img src="img/juri/juri-3-desktop@1x.jpg" srcset="img/juri/juri-3-desktop@2x.jpg"
                             alt="Александр Пашков" width="260" height="294" loading="lazy">
                         </picture>
                       </div>
                     </div>
                   </div>
                   <div class="juri__swiper-slide swiper-slide">
-                    <div class="juri__item">
-                      <p class="juri__name">Мария Кетова</p>
-                      <div class="juri__wrapper">
-                        <p class="juri__specialty">CrossFit</p>
-                        <ul class="juri__description">
-                          <li class="juri__description-item">Certified Level 3 Trainer</li>
-                          <li class="juri__description-item">Победитель чемпионата России по CrossFit</li>
-                          <li class="juri__description-item">Опыт — 6 лет</li>
-                        </ul>
+                    <div class="juri__item" tabindex="0">
+                      <div class="juri__text-wrapper">
+                        <p class="juri__name">Мария Кетова</p>
+                        <div class="juri__description-wrapper">
+                          <p class="juri__specialty">CrossFit</p>
+                          <ul class="juri__description">
+                            <li class="juri__description-item">Certified Level 3 Trainer</li>
+                            <li class="juri__description-item">Победитель чемпионата России по CrossFit</li>
+                            <li class="juri__description-item">Опыт — 6 лет</li>
+                          </ul>
+                        </div>
                       </div>
                       <div class="juri__image-wrapper">
                         <picture>
-                          <source type="image/webp" srcset="img/juri-4@1x.webp 1x, img/juri-4@2x.webp 2x">
-                          <img class="juri__image" src="img/juri-4@1x.jpg" srcset="img/juri-4@2x.jpg" alt="Мария Кетова"
-                            width="260" height="294" loading="lazy">
+                          <source media="(max-width: 767px)" type="image/webp"
+                            srcset="img/juri/juri-4-mobile@1x.webp 1x, img/juri/juri-4-mobile@2x.webp 2x">
+                          <source media="(max-width: 1365px)" type="image/webp"
+                            srcset="img/juri/juri-4-tablet@1x.webp 1x, img/juri/juri-4-tablet@2x.webp 2x">
+                          <source type="image/webp"
+                            srcset="img/juri/juri-4-desktop@1x.webp 1x, img/juri/juri-4-desktop@2x.webp 2x">
+                          <source media="(max-width: 767px)" type="image/jpg"
+                            srcset="img/juri/juri-4-mobile@1x.jpg 1x, img/juri/juri-4-mobile@2x.jpg 2x">
+                          <source media="(max-width: 1365px)" type="image/jpg"
+                            srcset="img/juri/juri-4-tablet@1x.jpg 1x, img/juri/juri-4--tablet@2x.jpg 2x">
+                          <img src="img/juri/juri-4-desktop@1x.jpg" srcset="img/juri/juri-4-desktop@2x.jpg"
+                            alt="Мария Кетова" width="260" height="294" loading="lazy">
+                        </picture>
+                      </div>
+                    </div>
+                  </div>
+                  <div class="juri__swiper-slide swiper-slide">
+                    <div class="juri__item" tabindex="0">
+                      <div class="juri__text-wrapper">
+                        <p class="juri__name">Анна Павлова</p>
+                        <div class="juri__description-wrapper">
+                          <p class="juri__specialty">CrossFit</p>
+                          <ul class="juri__description">
+                            <li class="juri__description-item">Certified Level 3 Trainer</li>
+                            <li class="juri__description-item">Победитель чемпионата России по CrossFit</li>
+                            <li class="juri__description-item">Опыт — 6 лет</li>
+                          </ul>
+                        </div>
+                      </div>
+                      <div class="juri__image-wrapper">
+                        <picture>
+                          <source media="(max-width: 767px)" type="image/webp"
+                            srcset="img/juri/juri-1-mobile@1x.webp 1x, img/juri/juri-1-mobile@2x.webp 2x">
+                          <source media="(max-width: 1365px)" type="image/webp"
+                            srcset="img/juri/juri-1-tablet@1x.webp 1x, img/juri/juri-1-tablet@2x.webp 2x">
+                          <source type="image/webp"
+                            srcset="img/juri/juri-1-desktop@1x.webp 1x, img/juri/juri-1-desktop@2x.webp 2x">
+                          <source media="(max-width: 767px)" type="image/jpg"
+                            srcset="img/juri/juri-1-mobile@1x.jpg 1x, img/juri/juri-1-mobile@2x.jpg 2x">
+                          <source media="(max-width: 1365px)" type="image/jpg"
+                            srcset="img/juri/juri-1-tablet@1x.jpg 1x, img/juri/juri-1--tablet@2x.jpg 2x">
+                          <img src="img/juri/juri-1-desktop@1x.jpg" srcset="img/juri/juri-1-desktop@2x.jpg"
+                            alt="Анна Павлова" width="260" height="294" loading="lazy">
+                        </picture>
+                        </picture>
+                      </div>
+                    </div>
+                  </div>
+                  <div class="juri__swiper-slide swiper-slide">
+                    <div class="juri__item" tabindex="0">
+                      <div class="juri__text-wrapper">
+                        <p class="juri__name">Алексей Лавров</p>
+                        <div class="juri__description-wrapper">
+                          <p class="juri__specialty">CrossFit</p>
+                          <ul class="juri__description">
+                            <li class="juri__description-item">Certified Level 3 Trainer</li>
+                            <li class="juri__description-item">Победитель чемпионата России по CrossFit</li>
+                            <li class="juri__description-item">Опыт — 6 лет</li>
+                          </ul>
+                        </div>
+                      </div>
+                      <div class="juri__image-wrapper">
+                        <picture>
+                          <source media="(max-width: 767px)" type="image/webp"
+                            srcset="img/juri/juri-2-mobile@1x.webp 1x, img/juri/juri-2-mobile@2x.webp 2x">
+                          <source media="(max-width: 1365px)" type="image/webp"
+                            srcset="img/juri/juri-2-tablet@1x.webp 1x, img/juri/juri-2-tablet@2x.webp 2x">
+                          <source type="image/webp"
+                            srcset="img/juri/juri-2-desktop@1x.webp 1x, img/juri/juri-2-desktop@2x.webp 2x">
+                          <source media="(max-width: 767px)" type="image/jpg"
+                            srcset="img/juri/juri-2-mobile@1x.jpg 1x, img/juri/juri-2-mobile@2x.jpg 2x">
+                          <source media="(max-width: 1365px)" type="image/jpg"
+                            srcset="img/juri/juri-2-tablet@1x.jpg 1x, img/juri/juri-2--tablet@2x.jpg 2x">
+                          <img src="img/juri/juri-2-desktop@1x.jpg" srcset="img/juri/juri-2-desktop@2x.jpg"
+                            alt="Алексей Лавров" width="260" height="294" loading="lazy">
+                        </picture>
+                      </div>
+                    </div>
+                  </div>
+                  <div class="juri__swiper-slide swiper-slide">
+                    <div class="juri__item" tabindex="0">
+                      <div class="juri__text-wrapper">
+                        <p class="juri__name">Александр Пашков</p>
+                        <div class="juri__description-wrapper">
+                          <p class="juri__specialty">CrossFit</p>
+                          <ul class="juri__description">
+                            <li class="juri__description-item">Certified Level 3 Trainer</li>
+                            <li class="juri__description-item">Победитель чемпионата России по CrossFit</li>
+                            <li class="juri__description-item">Опыт — 6 лет</li>
+                          </ul>
+                        </div>
+                      </div>
+                      <div class="juri__image-wrapper">
+                        <picture>
+                          <source media="(max-width: 767px)" type="image/webp"
+                            srcset="img/juri/juri-3-mobile@1x.webp 1x, img/juri/juri-3-mobile@2x.webp 2x">
+                          <source media="(max-width: 1365px)" type="image/webp"
+                            srcset="img/juri/juri-3-tablet@1x.webp 1x, img/juri/juri-3-tablet@2x.webp 2x">
+                          <source type="image/webp"
+                            srcset="img/juri/juri-3-desktop@1x.webp 1x, img/juri/juri-3-desktop@2x.webp 2x">
+                          <source media="(max-width: 767px)" type="image/jpg"
+                            srcset="img/juri/juri-3-mobile@1x.jpg 1x, img/juri/juri-3-mobile@2x.jpg 2x">
+                          <source media="(max-width: 1365px)" type="image/jpg"
+                            srcset="img/juri/juri-3-tablet@1x.jpg 1x, img/juri/juri-3--tablet@2x.jpg 2x">
+                          <img src="img/juri/juri-3-desktop@1x.jpg" srcset="img/juri/juri-3-desktop@2x.jpg"
+                            alt="Александр Пашков" width="260" height="294" loading="lazy">
+                        </picture>
+                      </div>
+                    </div>
+                  </div>
+                  <div class="juri__swiper-slide swiper-slide">
+                    <div class="juri__item" tabindex="0">
+                      <div class="juri__text-wrapper">
+                        <p class="juri__name">Мария Кетова</p>
+                        <div class="juri__description-wrapper">
+                          <p class="juri__specialty">CrossFit</p>
+                          <ul class="juri__description">
+                            <li class="juri__description-item">Certified Level 3 Trainer</li>
+                            <li class="juri__description-item">Победитель чемпионата России по CrossFit</li>
+                            <li class="juri__description-item">Опыт — 6 лет</li>
+                          </ul>
+                        </div>
+                      </div>
+                      <div class="juri__image-wrapper">
+                        <picture>
+                          <source media="(max-width: 767px)" type="image/webp"
+                            srcset="img/juri/juri-4-mobile@1x.webp 1x, img/juri/juri-4-mobile@2x.webp 2x">
+                          <source media="(max-width: 1365px)" type="image/webp"
+                            srcset="img/juri/juri-4-tablet@1x.webp 1x, img/juri/juri-4-tablet@2x.webp 2x">
+                          <source type="image/webp"
+                            srcset="img/juri/juri-4-desktop@1x.webp 1x, img/juri/juri-4-desktop@2x.webp 2x">
+                          <source media="(max-width: 767px)" type="image/jpg"
+                            srcset="img/juri/juri-4-mobile@1x.jpg 1x, img/juri/juri-4-mobile@2x.jpg 2x">
+                          <source media="(max-width: 1365px)" type="image/jpg"
+                            srcset="img/juri/juri-4-tablet@1x.jpg 1x, img/juri/juri-4--tablet@2x.jpg 2x">
+                          <img src="img/juri/juri-4-desktop@1x.jpg" srcset="img/juri/juri-4-desktop@2x.jpg"
+                            alt="Мария Кетова" width="260" height="294" loading="lazy">
                         </picture>
                       </div>
                     </div>
@@ -485,7 +579,7 @@
               <div class="accordion" data-accordion="parent">
                 <div class="accordion__element is-active" data-accordion="element">
                   <button class="accordion__button" data-accordion="button" type="button">
-                    <span>Как стать членом фитнес-центра?</span>
+                    <span>Как стать членом фитнес&#8209;центра?</span>
                     <span class="accordion__button-img accordion__button-img--close">
                       <svg width="20" height="20">
                         <use href="img/sprite.svg#plus"></use>
@@ -500,8 +594,10 @@
                   <div class="accordion__content" data-accordion="content">
                     <div class="accordion__wrapper">
                       <p>
-                        При первом посещении и покупке абонемента, необходимо заполнить анкету и подписать договор. При
-                        покупке абонемента онлайн, анкета также заполняется онлайн и договор придет вам на почту.
+                        При первом посещении и покупке абонемента, необходимо заполнить анкету&nbsp;и подписать договор.
+                        При
+                        покупке абонемента онлайн, анкета также заполняется онлайн и договор придет
+                        вам&nbsp;на&nbsp;почту.
                       </p>
                     </div>
                   </div>
@@ -550,7 +646,7 @@
                 </div>
                 <div class="accordion__element" data-accordion="element">
                   <button class="accordion__button" data-accordion="button">
-                    <span>Сколько тренеров работает в клубе и какова их квалификация?</span>
+                    <span>Сколько тренеров работает в клубе и какова их&nbsp;квалификация?</span>
                     <span class="accordion__button-img accordion__button-img--close">
                       <svg width="20" height="20">
                         <use href="img/sprite.svg#plus"></use>

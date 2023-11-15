@@ -1,6 +1,7 @@
 .poster {
   display: grid;
   grid-template-columns: 43% 1fr;
+  background-color: $color-torch-red;
 
   @include vp-767 {
     grid-template-columns: 1fr;
@@ -12,8 +13,9 @@
   flex-direction: column;
   gap: 23px;
   color: $color-default-white;
-  background-color: $color-torch-red;
+  word-break: break-word;
   padding: 80px;
+  margin: 0 auto;
 
   @include vp-1365 {
     gap: 6px;
@@ -26,10 +28,9 @@
   }
 }
 
-.games__schedule-wrapper {
-  display: grid;
-  grid-template-columns: repeat(2, 1fr);
-  gap: 68px;
+.poster__schedule-wrapper {
+  display: flex;
+  gap: 65px;
 
   @include vp-1365 {
     gap: 40px;
@@ -178,19 +179,35 @@
   padding: 27px 56px;
   margin-top: auto;
 
+  @include hover-focus {
+    color: $color-egyptian-blue;
+    background-color: $color-default-white;
+  }
+
+  @include active {
+    color: $color-sapphire;
+    background-color: $color-default-white;
+  }
+
+  &:disabled,
+  &--disabled {
+    opacity: 0.5;
+    pointer-events: none;
+  }
+
   @include vp-1365 {
     padding: 20px 40px;
   }
 }
 
-.games__image-wrapper {
+.poster__image-wrapper {
   display: flex;
   justify-content: center;
   align-items: center;
   background-color: $color-sapphire;
 }
 
-.games__image-wrapper img {
+.poster__image-wrapper img {
   width: 660px;
   height: 500px;
 
