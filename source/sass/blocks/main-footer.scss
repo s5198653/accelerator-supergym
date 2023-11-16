@@ -35,12 +35,12 @@
 .main-footer__free-lesson {
   display: flex;
   flex-direction: column;
-  padding: 60px 103px;
+  padding: 60px 170px 59px 103px;
   color: $color-default-white;
   background-color: $color-sapphire;
 
   @include vp-1365 {
-    padding: 100px 133px;
+    padding: 100px 133px 98px;
   }
 
   @include vp-767 {
@@ -48,117 +48,17 @@
   }
 }
 
-.main-footer__form {
-  display: flex;
-  flex-direction: column;
-  gap: 27px;
-  padding-top: 32px;
-
-  @include vp-1365 {
-    display: grid;
-    grid-template-columns: repeat(2, 1fr);
-    gap: 29px 60px;
-    padding-top: 25px;
-  }
-
-  @include vp-767 {
-    gap: 25px;
-  }
-
-  @include vp-767 {
-    display: flex;
-    flex-direction: column;
-    padding-top: 30px;
-  }
-}
-
-.main-footer__label {
-  display: grid;
-  grid-template-columns: repeat(2, 190px);
-  gap: 30px;
-
-  @include vp-1365 {
-    display: flex;
-  }
-}
-
-.main-footer__label span {
-  padding-top: 10px;
-  border-bottom: 1px solid $color-light-slate-grey;
-
-  @include vp-1365 {
-    display: none;
-  }
-}
-
-.main-footer__label:not(:first-child) {
-  display: none;
-
-  @include vp-1365 {
-    display: block;
-  }
-}
-
-.main-footer__input {
-  padding: 10px;
-  background-color: $color-transparent;
-  border: 1px solid rgba(255, 255, 255, 1);
-
-  &::placeholder {
-    color: $color-transparent;
-  }
-
-  @include vp-1365 {
-    width: 221px;
-    font-size: 16px;
-    font-style: normal;
-    font-weight: 300;
-    line-height: 24px;
-    border: none;
-    border-bottom: 1px solid $color-light-slate-grey;
-    padding-left: 0;
-    padding-bottom: 4px;
-
-    &::placeholder {
-      color: $color-default-white;
-    }
-  }
-
-  @include vp-767 {
-    width: 290px;
-    font-size: 14px;
-    line-height: 22px;
-  }
-}
-
-.main-footer__button {
-  justify-content: center;
-  max-width: 410px;
-
-  @include vp-1365 {
-    grid-column: 1/-1;
-    max-width: 502px;
-    padding-top: 20px;
-    padding-bottom: 20px;
-  }
-
-  @include vp-767 {
-    max-width: 290px;
-    margin-top: 13px;
-  }
-}
-
 .main-footer__contacts {
-  padding: 61px 100px;
+  padding: 59px 100px;
   border-top: 1px solid $color-light-slate-grey;
 
   @include vp-1365 {
-    padding: 103px 133px;
+    padding: 103px 133px 101px;
     border-top: unset;
   }
 
   @include vp-767 {
-    padding: 68px 15px 70px;
+    padding: 67px 15px 69px;
   }
 }
 
@@ -166,7 +66,12 @@
   padding-left: 20px;
 
   @include vp-1365 {
+    font-weight: 700;
     padding-left: 0;
+  }
+
+  @include vp-767 {
+    font-weight: 600;
   }
 }
 
@@ -181,11 +86,12 @@
 
   @include vp-1365 {
     gap: 27px 119px;
+    padding-top: 42px;
   }
 
   @include vp-767 {
     grid-template-columns: 1fr;
-    padding-top: 38px;
+    padding-top: 37px;
   }
 }
 
@@ -234,10 +140,17 @@
   @include vp-767 {
     font-size: 20px;
     line-height: 20px;
-    padding-bottom: 10px;
+    padding-bottom: 11px;
   }
 }
 
 .main-footer__contacts-text {
   margin: 0;
+}
+
+.footer__logo {
+  margin-bottom: auto;
+  @include vp-767 {
+    margin-left: -5px;
+  }
 }

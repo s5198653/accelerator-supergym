@@ -183,7 +183,7 @@
           <div class="games__poster poster">
             <div class="poster__text-wrapper">
               <div class="poster__schedule-wrapper">
-                <h2 class="poster__title">Super<br>games</h2>
+                <h2 class="poster__title">Super <br>games</h2>
                 <ul class="poster__schedule">
                   <li class="poster__schedule-item">
                     <p class="poster__schedule-text">Дата</p>
@@ -494,14 +494,7 @@
             <p><span>900</span>кв/м</p>
             <div>
               <h3>Площадь</h3>
-              <p>Занимайтесь без очередей и толкучки</p>
-            </div>
-          </li>
-          <li>
-            <p><span>70</span>машин</p>
-            <div>
-              <h3>Собственная парковка</h3>
-              <p>Вы всегда найдете место для своей машины на нашей парковке</p>
+              <p>Занимайтесь без очередей <br>и толкучки</p>
             </div>
           </li>
           <li>
@@ -512,10 +505,17 @@
             </div>
           </li>
           <li>
+            <p><span>70</span>машин</p>
+            <div>
+              <h3>Собственная парковка</h3>
+              <p>Вы всегда найдете место для своей машины на нашей парковке</p>
+            </div>
+          </li>
+          <li>
             <p><span>350</span>мест</p>
             <div>
               <h3>Комфорт</h3>
-              <p>Просторные раздевалки, душевые, фен, Wi-Fi, кулеры</p>
+              <p>Просторные раздевалки, <br>душевые, фен, Wi-Fi, кулеры</p>
             </div>
           </li>
           <li>
@@ -1007,17 +1007,26 @@
       <div class="main-footer__container container">
         <div class="main-footer__free-lesson">
           <h2 class="main-footer__title">Бесплатное занятие</h2>
-          <form class="main-footer__form" action="https://echo.htmlacademy.ru/" method="post">
-            <label class="main-footer__label">
-              <span>Имя</span>
-              <input class="main-footer__input" type="text" name="name" placeholder="Имя" required>
-            </label>
-            <label class="main-footer__label">
-              <span>Телефон</span>
-              <input class="main-footer__input" type="number" name="phone" placeholder="Телефон" required>
-            </label>
-            <button class="main-footer__button btn" type="submit">Отправить</button>
-          </form>
+          <div data-form-validate data-callback="base">
+            <form class="main-footer__form form" action="https://echo.htmlacademy.ru/" method="post">
+              <div class="form__input" data-validate-type="text" data-limitation="name"
+                data-message-base="Поле обязательно к заполнению"
+                data-message-extra="Проверьте корректность заполнения поля" data-required>
+                <label>
+                  <input type="text" name="name" placeholder="Имя" required>
+                </label>
+              </div>
+              <div class="form__input" data-validate-type="phone" data-on-input-validate
+                data-message-base="Поле обязательно к заполнению"
+                data-message-extra="Проверьте корректность заполнения поля" data-message-success="Поле заполнено верно"
+                data-required>
+                <label>
+                  <input type="tel" name="phone" placeholder="Телефон" required>
+                </label>
+              </div>
+              <button class="form__button btn btn--transparent" type="submit">Отправить</button>
+            </form>
+          </div>
         </div>
         <div class="main-footer__contacts">
           <h2 class="main-footer__title">Контакты</h2>
@@ -1042,7 +1051,7 @@
         </div>
         <div class="footer">
           <a class="footer__logo logo" href="index.html">
-            <img class="logo__image" src="img/svg/logotype.svg" alt="Логотип Sypergym." width="109" height="24">
+            <img src="img/svg/logotype.svg" alt="Логотип Sypergym." width="109" height="24">
           </a>
 
           <nav class="footer__nav">
@@ -1060,7 +1069,7 @@
               <li class="social__item">
                 <a class="social__link social__link--vkontakte" href="#">
                   <span class="visually-hidden">Мы в Вконтакте</span>
-                  <svg width="22" height="22">
+                  <svg width="14" height="14">
                     <use href="img/sprite.svg#vk"></use>
                   </svg>
                 </a>
@@ -1068,7 +1077,7 @@
               <li class="social__item">
                 <a class="social__link social__link--ok" href="#">
                   <span class="visually-hidden">Мы в Одноклассниках</span>
-                  <svg width="22" height="22">
+                  <svg width="14" height="14">
                     <use href="img/sprite.svg#ok"></use>
                   </svg>
                 </a>
@@ -1076,7 +1085,7 @@
               <li class="social__item">
                 <a class="social__link social__link--reddit" href="#">
                   <span class="visually-hidden">Мы в Reddit</span>
-                  <svg width="22" height="22">
+                  <svg width="14" height="14">
                     <use href="img/sprite.svg#reddit"></use>
                   </svg>
                 </a>
