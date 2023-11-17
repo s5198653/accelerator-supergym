@@ -6,14 +6,17 @@
   align-items: center;
   padding-left: 163px;
   padding-right: 163px;
+  padding-bottom: 118px;
 
   @include vp-1365 {
     padding-left: 45px;
     padding-right: 45px;
+    padding-bottom: 100px;
   }
 
   @include vp-767 {
     gap: 55px;
+    padding-bottom: 50px;
   }
 }
 
@@ -46,10 +49,13 @@
   list-style: none;
   display: grid;
   grid-template-columns: repeat(3, 1fr);
+  grid-auto-flow: dense;
+  gap: 82px 10px;
 
   @include vp-1365 {
     grid-template-columns: repeat(2, 1fr);
     gap: 40px 50px;
+    grid-auto-flow: row;
   }
 
   @include vp-767 {
@@ -62,7 +68,7 @@
 .features li {
   display: flex;
   gap: 30px;
-  min-height: 174px;
+  min-height: 92px;
 
   @include vp-1365 {
     gap: 15px;
@@ -74,13 +80,13 @@
     gap: 10px;
     align-items: center;
     text-align: center;
+    min-height: 172px;
     padding: 0 45px;
   }
 }
 
 .features li:nth-child(5n + 3) {
-  grid-column: 2;
-  grid-row: 1 / span 2;
+  grid-row: span 2;
   flex-direction: column;
   justify-content: center;
   gap: 12px;
@@ -88,13 +94,11 @@
   text-align: center;
   color: $color-default-white;
   background-color: #1c3374;
-  width: 240px;
   min-height: 340px;
-  margin: 4px 60px 0;
+  margin: 4px 50px 0;
   padding: 34px;
 
   @include vp-1365 {
-    grid-row: 2/3;
     grid-column: 1/-1;
     width: 400px;
     min-height: 262px;
@@ -108,7 +112,17 @@
     min-width: 320px;
     min-height: 225px;
     gap: 5px;
-    padding: 20px 70px;
+    padding: 30px 70px;
+    margin-top: 5px;
+    margin-bottom: 5px;
+  }
+}
+
+.features li:nth-child(5n + 2) {
+  grid-column: 3;
+
+  @include vp-1365 {
+    grid-column: unset;
   }
 }
 
@@ -141,6 +155,12 @@
   font-weight: 400;
   line-height: 150%;
   padding-bottom: 8px;
+
+  @include vp-767 {
+    font-size: 14px;
+    font-weight: 300;
+    line-height: 22px;
+  }
 }
 
 .features li:nth-child(5n + 3) h3 {
@@ -227,8 +247,7 @@
   }
 }
 
-.features li:nth-child(5n + 4),
-.features li:nth-child(5n + 5) {
+.features li:nth-child(n + 4) {
   min-height: 172px;
   border-top: 2px solid rgba(209, 10, 66, 0.2);
   padding-top: 54px;
@@ -237,5 +256,17 @@
     border-top: none;
     padding-top: 0;
     min-height: 92px;
+  }
+
+  @include vp-767 {
+    min-height: 172px;
+  }
+}
+
+.features br {
+  display: none;
+
+  @include vp-767 {
+    display: inline;
   }
 }
