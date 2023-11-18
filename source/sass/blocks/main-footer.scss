@@ -140,16 +140,22 @@
   @include vp-767 {
     font-size: 20px;
     line-height: 20px;
-    padding-bottom: 11px;
+    padding-bottom: 12px;
   }
 }
 
 .main-footer__contacts-text {
+  color: $color-sapphire;
   margin: 0;
+
+  @include vp-767 {
+    line-height: 20px;
+  }
 }
 
 .footer__logo {
   margin-bottom: auto;
+
   @include vp-767 {
     margin-left: -5px;
   }

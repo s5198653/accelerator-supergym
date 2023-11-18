@@ -1,12 +1,13 @@
 .hero {
-  background: linear-gradient(
-    90deg,
-    $color-resolution-blue 0%,
-    $color-resolution-blue 0.01%,
-    #1a3578 39.11%,
-    #73184b 75.5%,
-    #b4022a 100%
-  );
+  background:
+    linear-gradient(
+      90deg,
+      $color-resolution-blue 0%,
+      $color-resolution-blue 0.01%,
+      #1a3578 39.11%,
+      #73184b 75.5%,
+      #b4022a 100%
+    );
 }
 
 .hero__container {

@@ -2,9 +2,9 @@
 <html lang="ru">
 
 <head>
-  <meta charset="UTF-8" />
-  <meta http-equiv="X-UA-Compatible" content="IE=edge" />
-  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <meta name="description" content="Сайт фитнес-центра SUPERGYM в Омске">
   <title>Supergym</title>
   <link rel="stylesheet" href="css/style.min.css">
@@ -148,11 +148,11 @@
                   <use href="img/sprite.svg#rouble"></use>
                 </svg>
               </div>
-              <a href="#" class="price__button btn">Купить абонемент</a>
+              <a class="price__button btn" href="#">Купить абонемент</a>
             </li>
             <li class="price__card-item price__card-item--basic">
               <span class="price__card-description">Дневной</span>
-              <span class="price__card-time">с 8:00 до 17:00</span>
+              <span class="price__card-time price__card-time--basic">с 8:00 до 17:00</span>
               <div class="price__card-price-wrapper">
                 <p class="price__card-price" data-tabs="price">1700</p>
                 <span data-tabs="price-shadow">1700</span>
@@ -160,7 +160,7 @@
                   <use href="img/sprite.svg#rouble"></use>
                 </svg>
               </div>
-              <a href="#" class="price__button btn">Купить абонемент</a>
+              <a class="price__button btn" href="#">Купить абонемент</a>
             </li>
             <li class="price__card-item" tabindex="0">
               <span class="price__card-description">Полный день</span>
@@ -172,7 +172,7 @@
                   <use href="img/sprite.svg#rouble"></use>
                 </svg>
               </div>
-              <a href="#" class="price__button btn">Купить абонемент</a>
+              <a class="price__button btn" href="#">Купить абонемент</a>
             </li>
           </ul>
         </div>
@@ -183,11 +183,15 @@
           <div class="games__poster poster">
             <div class="poster__text-wrapper">
               <div class="poster__schedule-wrapper">
-                <h2 class="poster__title">Super <br>games</h2>
+                <h2 class="poster__title">Super games</h2>
                 <ul class="poster__schedule">
                   <li class="poster__schedule-item">
                     <p class="poster__schedule-text">Дата</p>
-                    <p class="poster__time poster__time--short">7<span>Марта<br>2019</span></p>
+                    <div class="poster__date">
+                      <p class="poster__time poster__time--short">7</p>
+                      <span>Марта</span>
+                      <span>2019</span>
+                    </div>
                   </li>
                   <li class="poster__schedule-item">
                     <p class="poster__schedule-text">Время</p>
@@ -196,7 +200,7 @@
                 </ul>
               </div>
               <p class="poster__description">Ежегодные соревнования по&nbsp;CrossFit</p>
-              <a href="#" class="poster__button btn btn--transparent">заполнить заявку</a>
+              <a class="poster__button btn btn--transparent" href="#">Заполнить заявку</a>
             </div>
             <div class="poster__image-wrapper">
               <picture>
@@ -247,7 +251,6 @@
                             srcset="img/juri/juri-1-tablet@1x.jpg 1x, img/juri/juri-1--tablet@2x.jpg 2x">
                           <img src="img/juri/juri-1-desktop@1x.jpg" srcset="img/juri/juri-1-desktop@2x.jpg"
                             alt="Анна Павлова" width="260" height="294" loading="lazy">
-                        </picture>
                         </picture>
                       </div>
                     </div>
@@ -372,7 +375,6 @@
                             srcset="img/juri/juri-1-tablet@1x.jpg 1x, img/juri/juri-1--tablet@2x.jpg 2x">
                           <img src="img/juri/juri-1-desktop@1x.jpg" srcset="img/juri/juri-1-desktop@2x.jpg"
                             alt="Анна Павлова" width="260" height="294" loading="lazy">
-                        </picture>
                         </picture>
                       </div>
                     </div>
@@ -536,7 +538,7 @@
               <h3>Год</h3>
               <span>4999</span>
               <p>Безлимитный абонемент в тренажерный зал</p>
-              <a href="#">подробнее</a>
+              <a href="#">Подробнее</a>
             </div>
             <picture>
               <source media="(max-width: 767px)" type="image/webp"
@@ -554,12 +556,12 @@
           <li>
             <h3>Месяц бесплатно</h3>
             <p>Приведи друга, получи абонемент в&nbsp;подарок</p>
-            <a href="#">подробнее</a>
+            <a href="#">Подробнее</a>
           </li>
           <li>
             <h3>Скидка 20%</h3>
             <p>Корпоративный фитнес с командой</p>
-            <a href="#">подробнее</a>
+            <a href="#">Подробнее</a>
           </li>
         </ul>
       </section>
@@ -603,7 +605,7 @@
                   </div>
                 </div>
                 <div class="accordion__element" data-accordion="element">
-                  <button class="accordion__button" data-accordion="button">
+                  <button class="accordion__button" data-accordion="button" type="button">
                     <span>Где можно посмотреть расписание?</span>
                     <span class="accordion__button-img accordion__button-img--open">
                       <svg width="20" height="20">
@@ -624,7 +626,7 @@
                   </div>
                 </div>
                 <div class="accordion__element" data-accordion="element">
-                  <button class="accordion__button" data-accordion="button">
+                  <button class="accordion__button" data-accordion="button" type="button">
                     <span>Есть кулеры в центре? Предоставляются полотенца?</span>
                     <span class="accordion__button-img accordion__button-img--open">
                       <svg width="20" height="20">
@@ -645,7 +647,7 @@
                   </div>
                 </div>
                 <div class="accordion__element" data-accordion="element">
-                  <button class="accordion__button" data-accordion="button">
+                  <button class="accordion__button" data-accordion="button" type="button">
                     <span>Сколько тренеров работает в клубе и какова их&nbsp;квалификация?</span>
                     <span class="accordion__button-img accordion__button-img--open">
                       <svg width="20" height="20">
@@ -670,7 +672,7 @@
             <div class="tabs__element" data-tabs="element">
               <div class="accordion" data-accordion="parent">
                 <div class="accordion__element" data-accordion="element">
-                  <button class="accordion__button" data-accordion="button">
+                  <button class="accordion__button" data-accordion="button" type="button">
                     <span>Занятия с тренером входят в абонемент?</span>
                     <span class="accordion__button-img accordion__button-img--open">
                       <svg width="20" height="20">
@@ -691,7 +693,7 @@
                   </div>
                 </div>
                 <div class="accordion__element" data-accordion="element">
-                  <button class="accordion__button" data-accordion="button">
+                  <button class="accordion__button" data-accordion="button" type="button">
                     <span>Можно ли заморозить абонемент?</span>
                     <span class="accordion__button-img accordion__button-img--open">
                       <svg width="20" height="20">
@@ -712,7 +714,7 @@
                   </div>
                 </div>
                 <div class="accordion__element" data-accordion="element">
-                  <button class="accordion__button" data-accordion="button">
+                  <button class="accordion__button" data-accordion="button" type="button">
                     <span>Есть ли лимит по посещениям тренажерного зала и групповых занятий?</span>
                     <span class="accordion__button-img accordion__button-img--open">
                       <svg width="20" height="20">
@@ -733,7 +735,7 @@
                   </div>
                 </div>
                 <div class="accordion__element" data-accordion="element">
-                  <button class="accordion__button" data-accordion="button">
+                  <button class="accordion__button" data-accordion="button" type="button">
                     <span>Что такое семейный доступ и доступ для друзей?</span>
                     <span class="accordion__button-img accordion__button-img--open">
                       <svg width="20" height="20">
@@ -758,7 +760,7 @@
             <div class="tabs__element" data-tabs="element">
               <div class="accordion" data-accordion="parent">
                 <div class="accordion__element" data-accordion="element">
-                  <button class="accordion__button" data-accordion="button">
+                  <button class="accordion__button" data-accordion="button" type="button">
                     <span>Предлагает ли клуб услуги по консультированию по вопросам питания?</span>
                     <span class="accordion__button-img accordion__button-img--open">
                       <svg width="20" height="20">
@@ -779,7 +781,7 @@
                   </div>
                 </div>
                 <div class="accordion__element" data-accordion="element">
-                  <button class="accordion__button" data-accordion="button">
+                  <button class="accordion__button" data-accordion="button" type="button">
                     <span>Проводятся ли в клубе какие-либо мероприятия или соревнования?</span>
                     <span class="accordion__button-img accordion__button-img--open">
                       <svg width="20" height="20">
@@ -800,7 +802,7 @@
                   </div>
                 </div>
                 <div class="accordion__element" data-accordion="element">
-                  <button class="accordion__button" data-accordion="button">
+                  <button class="accordion__button" data-accordion="button" type="button">
                     <span>Можно ли приобрести в центре спортивное питание?</span>
                     <span class="accordion__button-img accordion__button-img--open">
                       <svg width="20" height="20">
@@ -821,7 +823,7 @@
                   </div>
                 </div>
                 <div class="accordion__element" data-accordion="element">
-                  <button class="accordion__button" data-accordion="button">
+                  <button class="accordion__button" data-accordion="button" type="button">
                     <span>Есть ли в центре детская комната?</span>
                     <span class="accordion__button-img accordion__button-img--open">
                       <svg width="20" height="20">
@@ -846,7 +848,7 @@
             <div class="tabs__element" data-tabs="element">
               <div class="accordion" data-accordion="parent">
                 <div class="accordion__element" data-accordion="element">
-                  <button class="accordion__button" data-accordion="button">
+                  <button class="accordion__button" data-accordion="button" type="button">
                     <span>Есть в фитнес-центре дресс-код?</span>
                     <span class="accordion__button-img accordion__button-img--open">
                       <svg width="20" height="20">
@@ -865,12 +867,12 @@
                         Верхняя и нижняя части тела должны быть закрыты (используйте футболки, майки, спортивные брюки,
                         шорты,
                         кроссовки). В целях безопасности, запрещается тренироваться босиком, в пляжных или домашних
-                        тапочках и т. п., исключения составляют специальные классы (например, йога, пилатес). </p>
+                        тапочках и т. п., исключения составляют специальные классы (например, йога, пилатес).</p>
                     </div>
                   </div>
                 </div>
                 <div class="accordion__element" data-accordion="element">
-                  <button class="accordion__button" data-accordion="button">
+                  <button class="accordion__button" data-accordion="button" type="button">
                     <span>Можно ли приводить с собой детей на тренировки?</span>
                     <span class="accordion__button-img accordion__button-img--open">
                       <svg width="20" height="20">
@@ -891,7 +893,7 @@
                   </div>
                 </div>
                 <div class="accordion__element" data-accordion="element">
-                  <button class="accordion__button" data-accordion="button">
+                  <button class="accordion__button" data-accordion="button" type="button">
                     <span>Какие дополнительные правила посещения центра?</span>
                     <span class="accordion__button-img accordion__button-img--open">
                       <svg width="20" height="20">
@@ -912,7 +914,7 @@
                   </div>
                 </div>
                 <div class="accordion__element" data-accordion="element">
-                  <button class="accordion__button" data-accordion="button">
+                  <button class="accordion__button" data-accordion="button" type="button">
                     <span>Нужна ли медицинская справка для посещения залов и бассейна?</span>
                     <span class="accordion__button-img accordion__button-img--open">
                       <svg width="20" height="20">
@@ -1013,6 +1015,7 @@
                 data-message-base="Поле обязательно к заполнению"
                 data-message-extra="Проверьте корректность заполнения поля" data-required>
                 <label>
+                  <span class="visually-hidden">Имя</span>
                   <input type="text" name="name" placeholder="Имя" required>
                 </label>
               </div>
@@ -1021,6 +1024,7 @@
                 data-message-extra="Проверьте корректность заполнения поля" data-message-success="Поле заполнено верно"
                 data-required>
                 <label>
+                  <span class="visually-hidden">Телефон</span>
                   <input type="tel" name="phone" placeholder="Телефон" required>
                 </label>
               </div>

@@ -35,7 +35,7 @@
     border-bottom-color: $color-default-white;
   }
 
-  &.focus-visible:focus {
+  &:focus {
     border: 1px solid $color-default-white;
     outline: none;
   }
@@ -78,7 +78,7 @@
   }
 }
 
-.form__input input.focus-visible:focus,
+.form__input input:focus,
 .form__input input:active {
   &::placeholder {
     color: $color-transparent;

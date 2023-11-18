@@ -1,7 +1,6 @@
 .btn {
   display: inline-flex;
   padding: 25px 20px;
-
   font-size: 12px;
   font-weight: 700;
   line-height: 12px;
@@ -11,11 +10,9 @@
   text-align: center;
   justify-content: center;
   user-select: none;
-
   background-color: $color-transparent;
   border: 2px solid $color-sapphire;
   cursor: pointer;
-
   transition: opacity $trans-default;
 
   &:disabled,
