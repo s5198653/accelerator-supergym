@@ -81,6 +81,11 @@
 }
 
 .footer__nav-item {
+  display: flex;
+}
+
+.footer__nav-link {
+  color: $color-default-white;
   padding: 5px 10px;
   cursor: pointer;
 

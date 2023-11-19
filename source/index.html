@@ -12,8 +12,6 @@
   <link rel="icon" href="img/svg/favicon.svg" type="image/svg+xml">
 
   <link rel="preload" href="css/style.min.css" as="style">
-  <link rel="preload" href="js/vendor.min.js" as="script">
-  <link rel="preload" href="js/main.min.js" as="script">
   <link rel="preload" href="fonts/alumni-sans-v18-cyrillic_latin-regular.woff2" as="font" crossorigin="anonymous">
   <link rel="preload" href="fonts/alumni-sans-v18-cyrillic_latin-600.woff2" as="font" crossorigin="anonymous">
   <link rel="preload" href="fonts/alumni-sans-v18-cyrillic_latin-700.woff2" as="font" crossorigin="anonymous">
@@ -29,7 +27,7 @@
       <header class="main-header">
         <div class="main-header__container container">
           <a class="main-header__logo logo" href="index.html">
-            <img class="logo__image" src="img/svg/logotype.svg" alt="Логотип Sypergym." width="120" height="26">
+            <img src="img/svg/logotype.svg" alt="Логотип Sypergym." width="120" height="26">
           </a>
           <a class="main-header__phone" href="tel:+78005555555">8-800-555-55-55</a>
         </div>
@@ -45,8 +43,8 @@
               <li class="hero__item">Кардио-зона</li>
             </ul>
             <div class="hero__title-area">
-              <span class="hero__description">Омск</span>
-              <span class="hero__title">Фитнес центр</span>
+              <p class="hero__description">Омск</p>
+              <h2 class="hero__title">Фитнес центр</h2>
             </div>
             <a class="hero__button btn btn--transparent" href="#membership">Купить абонемент</a>
           </div>
@@ -57,7 +55,7 @@
               <source type="image/webp" srcset="img/hero-desktop@1x.webp 1x, img/hero-desktop@2x.webp 2x">
               <source media="(min-width: 768px) and (max-width: 1365px)" type="image/jpg"
                 srcset="img/hero-tablet@1x.jpg 1x, img/hero-tablet@2x.jpg 2x">
-              <img class="hero__image" src="img/hero-desktop@1x.jpg" srcset="img/hero-desktop@2x.jpg"
+              <img src="img/hero-desktop@1x.jpg" srcset="img/hero-desktop@2x.jpg"
                 alt="Мужчина в футболке супермена" width="500" height="524">
             </picture>
           </div>
@@ -122,7 +120,7 @@
               <source type="image/webp" srcset="img/bar-desktop@1x.webp 1x, img/bar-desktop@2x.webp 2x">
               <source media="(max-width: 1365px)" type="image/png"
                 srcset="img/bar-tablet@1x.png 1x, img/bar-tablet@2x.png 2x">
-              <img class="price__image" src="img/bar-desktop@1x.png" srcset="img/bar-desktop@2x.png" alt="" width="287"
+              <img src="img/bar-desktop@1x.png" srcset="img/bar-desktop@2x.png" alt="" width="287"
                 height="491">
             </picture>
           </div>
@@ -1009,7 +1007,7 @@
       <div class="main-footer__container container">
         <div class="main-footer__free-lesson">
           <h2 class="main-footer__title">Бесплатное занятие</h2>
-          <div data-form-validate data-callback="base">
+          <div data-form-validate data-callback="base" data-form="send">
             <form class="main-footer__form form" action="https://echo.htmlacademy.ru/" method="post">
               <div class="form__input" data-validate-type="text" data-limitation="name"
                 data-message-base="Поле обязательно к заполнению"
@@ -1060,11 +1058,21 @@
 
           <nav class="footer__nav">
             <ul class="footer__nav-list">
-              <li class="footer__nav-item">Услуги</li>
-              <li class="footer__nav-item">Абонементы</li>
-              <li class="footer__nav-item">Акции</li>
-              <li class="footer__nav-item">Тренеры</li>
-              <li class="footer__nav-item">Расписание</li>
+              <li class="footer__nav-item">
+                <a class="footer__nav-link" href="#">Услуги</a>
+              </li>
+              <li class="footer__nav-item">
+                <a class="footer__nav-link" href="#">Абонементы</a>
+              </li>
+              <li class="footer__nav-item">
+                <a class="footer__nav-link" href="#">Акции</a>
+              </li>
+              <li class="footer__nav-item">
+                <a class="footer__nav-link" href="#">Тренеры</a>
+              </li>
+              <li class="footer__nav-item">
+                <a class="footer__nav-link" href="#">Расписание</a>
+              </li>
             </ul>
           </nav>
 
