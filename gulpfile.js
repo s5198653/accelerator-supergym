@@ -1,4 +1,5 @@
 import gulp from "gulp";
+import ghPages from 'gulp-gh-pages';
 import browserSync from "browser-sync";
 import del from "del";
 import { compileStyles, compileMinStyles } from "./gulp/compileStyles.mjs";
@@ -99,4 +100,6 @@ const start = gulp.series(
   syncServer
 );
 
-export { createWebp as webp, build, start, dev };
+const deploy = () => gulp.src('./build/**/*').pipe(ghPages());
+
+export { createWebp as webp, build, start, dev, deploy };
